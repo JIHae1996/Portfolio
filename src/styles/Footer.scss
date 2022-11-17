@@ -1,0 +1,14 @@
+.Footer_ul{
+    display: flex;
+    position: fixed;
+    bottom: 32px;
+    right: 20px;
+    a{
+        font-size: 35px;
+        padding-left: 10px;
+        transition: all 0.2s linear 0s;
+        &:hover{
+            color: #8247FF;
+        }
+    }
+}

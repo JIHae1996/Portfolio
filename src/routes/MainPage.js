@@ -113,24 +113,7 @@ function MainPage() {
 
 
 
-  //마우스 움직일때
-  const body = document.querySelector(".main__main2");
-  body.addEventListener("mousemove", e => {
-      let posX = e.pageX/100;
-      let posY = e.pageY/150;
-      console.log(posY);
-
-     //-반대방향 , +같은방향
-     let obj1 = document.querySelector(".main_content2_circle1");
-     obj1.style.left = 200+posX+"px";
-     obj1.style.bottom = -100+posY+"px";
-
-     let obj2 = document.querySelector(".main_content2_circle2");
-     obj2.style.right = 150+posX+"px";
-     obj2.style.bottom = -100+posY+"px";
-
-
-  });
+ 
 
   return (
     <>

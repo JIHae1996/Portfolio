@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.3d0646fb.css",
+    "main.js": "/Portfolio/static/js/main.ff99e183.js",
+    "static/media/Comp3.mp4": "/Portfolio/static/media/Comp3.c88bb4f3d9ff23122af9.mp4",
+    "static/media/Comp2.mp4": "/Portfolio/static/media/Comp2.5309b9adae3d1550f3ae.mp4",
+    "static/media/Comp5.mp4": "/Portfolio/static/media/Comp5.f735de486405558defbd.mp4",
+    "static/media/Comp6.mp4": "/Portfolio/static/media/Comp6.b39fb3173335de8dab17.mp4",
+    "static/media/Comp4.mp4": "/Portfolio/static/media/Comp4.5ea8584c4b063b43b71d.mp4",
+    "static/media/yangyangmockup.png": "/Portfolio/static/media/yangyangmockup.572375630818e63dc23e.png",
+    "static/media/ThemeIcon.png": "/Portfolio/static/media/ThemeIcon.fdd0b14a0e5b22616eb3.png",
+    "static/media/lottieicons.png": "/Portfolio/static/media/lottieicons.fbb929fbc05ad17b272d.png",
+    "static/media/jordy.png": "/Portfolio/static/media/jordy.826a0afc0d973a9818e7.png",
+    "static/media/Portfolio.svg": "/Portfolio/static/media/Portfolio.9e4fd8e99b4f6036a715fb882d1bf57d.svg",
+    "static/media/DevelopmentTools.svg": "/Portfolio/static/media/DevelopmentTools.6fb1ad8caf3f9c502c5c210804aa5f3e.svg",
+    "static/media/DesignTools.svg": "/Portfolio/static/media/DesignTools.c010ca1d918a491f68004f6a65edbb8a.svg",
+    "static/media/ToolIcon.svg": "/Portfolio/static/media/ToolIcon.d4190397420ca0cc92609432a9efd19a.svg",
+    "static/media/JH.svg": "/Portfolio/static/media/JH.e66d3839c2e872f3538a962fd3eaa35a.svg",
+    "index.html": "/Portfolio/index.html",
+    "main.3d0646fb.css.map": "/Portfolio/static/css/main.3d0646fb.css.map",
+    "main.ff99e183.js.map": "/Portfolio/static/js/main.ff99e183.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3d0646fb.css",
+    "static/js/main.ff99e183.js"
+  ]
+}

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import '../styles/MainPage.scss'
+import Canvas from "../components/Canvas";
 
-import JH from '../assets/JH.svg'
 import ToolIcon from '../assets/ToolIcon.svg'
 import DevelopmentTools from '../assets/DevelopmentTools.svg'
 import DesignTools from '../assets/DesignTools.svg'
@@ -13,8 +13,12 @@ import SubPage from './SubPage'
 const DIVIDER_HEIGHT = 5;
 
 function MainPage() {
+  // Scroll
   const outerDivRef = useRef();
   const [scrollIndex, setScrollIndex] = useState(1);
+  const [show01, setShow01] = useState(false);
+  const [show02, setShow02] = useState(false);
+
   useEffect(() => {
     const wheelHandler = (e) => {
       e.preventDefault();
@@ -22,7 +26,6 @@ function MainPage() {
       const { scrollTop } = outerDivRef.current; // 스크롤 위쪽 끝부분 위치
       const pageHeight = window.innerHeight; // 화면 세로길이, 100vh와 같습니다.
       console.log(scrollTop)
-
       
       if (deltaY > 0) {
         // 스크롤 내릴 때
@@ -43,6 +46,7 @@ function MainPage() {
             left: 0,
             behavior: "smooth",
           });
+          setShow01(true);
           setScrollIndex(3);
         } else if (scrollTop >= pageHeight && scrollTop < pageHeight * 3) {
           //현재 3페이지
@@ -52,6 +56,7 @@ function MainPage() {
             left: 0,
             behavior: "smooth",
           });
+          setShow02(true);
           setScrollIndex(4);
         } else {
           // 현재 4페이지
@@ -113,18 +118,43 @@ function MainPage() {
 
 
 
- 
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+
+        if (window.scrollY > 750) {
+          setShow01(true);
+        }else if (window.scrollY > 1500){
+          setShow02(true);
+        }else{
+          setShow01(false);
+          setShow02(false);
+        }
+    });
+    return () => {
+        window.removeEventListener("scroll" , () => {});
+    }
+  },[]);
+
+  const newArr = Array.from({ length: 16}, (el, index) => index + 1);
 
   return (
     <>
     {/* main_container */}
       <div ref={outerDivRef} className='main_container'>
       <section className='main__main'>
-        <div className='main_content1'><img src={JH} alt='logo' className='Nav_logo'/></div>
-        <p className='main_cont1_text'><span>인터랙티브 UI 디벨로퍼를 꿈꾸는,</span><br />
+        <div className='main_content1'>
+            <div className="box">
+            {newArr.map((num) => (
+              <span key={num} style={{ "--i": num }}>
+                <i>JH</i>
+              </span>
+            ))}
+          </div>
+        </div>
+        <p className='main_cont1_text'><span>Interactive UI Developer를 꿈꾸는,</span><br />
         <span>이지해 입니다</span></p>
       </section>
-      <section className='main__main2'>
+      <section className={`main__main2 ${show01 && "main__main2_on"}`}>
         <div className='main_content2'>
           <div className='profile_1'>
             <h3>이지해 1996.06.18</h3>
@@ -140,12 +170,12 @@ function MainPage() {
             </div>
             <div className='profile_1_2'>
               <p><strong>이젠아카데미컴퓨터학원</strong></p>
-              <p>UI/UX 웹&앱 디자인 & 프론트엔드(React.js)_B 수강중</p>
+              <p>UI/UX 웹&amp;앱 디자인 &amp; 프론트엔드(React.js)_B 수강중</p>
             </div>
             <div className='profile_1_3'>
-              <img src={ToolIcon} alt='logo' className='Nav_logo'/>
-              <img src={DevelopmentTools} alt='logo' className='Nav_logo'/>
-              <img src={DesignTools} alt='logo' className='Nav_logo'/>
+              <img src={ToolIcon} alt='logo' />
+              <img src={DevelopmentTools} alt='logo' />
+              <img src={DesignTools} alt='logo' />
             </div>
           </div>
           <div className='profile_line'></div>
@@ -208,16 +238,18 @@ function MainPage() {
         </div>
         <div className='main_content2_circle1'></div>
         <div className='main_content2_circle2'></div>
+        <Canvas />
       </section> 
       <div className='main__bg'></div>
+      <div className='main__bg_2'></div>
       <section className='sub_main'>
       <div>
-      <SubPage />
+      <SubPage className={`main__main ${show02 && "main__main_on"}`}/>
       </div>
       </section>
       <section className='other_main'>
       <div>
-      <OtherPage />  
+      <OtherPage/>  
       </div>
       </section>        
     </div>

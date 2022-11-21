@@ -4,7 +4,6 @@ import Nav from './components/Nav';
 import Footer from './components/Footer'
 import MainPage from './routes/MainPage';
 import OtherPage from './routes/OtherPage'
-import DetailPage from './routes/DetailPage';
 import SubPage from './routes/SubPage';
 
 function Router() {
@@ -25,7 +24,6 @@ function Router() {
             <Route index element={<MainPage />}/>
             <Route index element={<SubPage />}/>
             <Route index element={<OtherPage />}/>
-            <Route path='/detail' element={<DetailPage />}/>
         </Route>
     </Routes>
     </BrowserRouter>

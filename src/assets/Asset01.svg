@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 188.57 188.31">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #231f20;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <path class="cls-1" d="M12.08,23.12c-3.16,0-6.05-.79-8.16-2.63-2.37-1.58-3.42-4.47-3.42-8.68C.5,7.87,1.55,4.97,3.92,3.13,6.02,1.55,8.92,.5,12.08,.5H61.8c3.68,0,6.58,1.05,8.16,2.63,1.58,2.1,2.37,4.47,2.37,7.63V77.84h65.77V.5h39.46c3.68,0,6.58,1.05,8.16,2.63,1.58,2.1,2.37,4.47,2.37,7.63V187.81h-49.98V108.62H72.32v79.19H22.33V23.12H12.08Z"/>
+  </g>
+  <animateMotion
+          id="st"
+          dur="12s"
+          begin="0s;ed.end;"
+          repeatCount="1"
+          fill="freeze">
+          <mpath xlinkHref="#Layer_1-2"/>
+        </animateMotion>
+        <animateMotion
+          id="ed"
+          dur="12s"
+          begin="st.end;"
+          repeatCount="1"
+          fill="freeze">
+          <mpath xlinkHref="#Layer_1-2"/>
+  </animateMotion>
+</svg>

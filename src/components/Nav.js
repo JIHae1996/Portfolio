@@ -4,6 +4,7 @@ import logo from '../assets/Portfolio.svg'
 import { BiMenu } from "react-icons/bi";
 import '../styles/Nav.scss'
 import Menu from './Menu';
+import MainPage from '../routes/MainPage';
 
 function Nav() {
   const [show, setShow] = useState(false);
@@ -45,7 +46,7 @@ function Nav() {
     src={logo} 
     alt='logo' 
     className='Nav_logo'
-    onClick={() => (window.location.href = "/")} 
+    onClick={() => (window.location.href = '/Portfolio')} 
     />
     <div>
         <BiMenu alt='menu' className='Nav_menu'

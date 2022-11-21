@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react'
+import React from 'react'
 import '../styles/SubPage.scss'
 import Comp2 from '../assets/Comp2.mp4'
 import Comp3 from '../assets/Comp3.mp4'
@@ -18,6 +18,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+
+import { VscCircleFilled } from "react-icons/vsc";
 
 function SubPage() {
 
@@ -58,15 +60,15 @@ function SubPage() {
                     <ul className='sub_cont_text'>
                       <li>
                         <h4>1.반응형 웹 제작</h4>
-                        <p>● pc,tablet,mobile</p>
+                        <p><VscCircleFilled /> pc,tablet,mobile</p>
                       </li>
                       <li>
                         <h4>2.웹 표준 준수</h4>
-                        <p>● HTML/CSS WC 유효성 검사 Pass</p>
+                        <p><VscCircleFilled /> HTML/CSS WC 유효성 검사 Pass</p>
                       </li>
                       <li>
                         <h4>3.주요기술</h4>
-                        <p>● CSS animation 속성과 JS를 이용한 스크롤 animation,<br />
+                        <p><VscCircleFilled /> CSS animation 속성과 JS를 이용한 스크롤 animation,<br />
                         마우스 Hover 인터렉션 등 구현.</p>
                       </li>
                     </ul>
@@ -78,16 +80,16 @@ function SubPage() {
                 </div>
               </div>
               <div className='sub_video1'>
-                <video id="video" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
-                <source src={Comp2} width="700" height="420" autoplay></source>
+                <video id="video" preload="auto" autoPlay={true} loop="loop" muted="muted" volume="0">
+                <source src={Comp2} width="700" height="420" ></source>
                 </video>
               </div>
             </div>
           </article>
-          <div class='sub_btn'> 
-                <div class='sub_btn_1'>        
-                <button>Page <MdOpenInNew /></button>
-                <button>Repository <MdOpenInNew /></button>
+          <div className='sub_btn'> 
+                <div className='sub_btn_1'>        
+                <button><a href="https://jihae96.github.io/NCSOFT/">Page <MdOpenInNew /></a></button>
+                <button><a href="https://github.com/jihae96/NCSOFT">Repository <MdOpenInNew /></a></button>
                 </div>
             </div>
       </section>
@@ -114,15 +116,15 @@ function SubPage() {
                   <ul className='sub_cont_text'>
                     <li>
                       <h4>1.반응형 웹 제작</h4>
-                      <p>● pc,tablet,mobile</p>
+                      <p><VscCircleFilled /> pc,tablet,mobile</p>
                     </li>
                     <li>
                       <h4>2.웹 표준 준수</h4>
-                      <p>● HTML/CSS WC 유효성 검사 Pass</p>
+                      <p><VscCircleFilled /> HTML/CSS WC 유효성 검사 Pass</p>
                     </li>
                     <li>
                       <h4>3.주요기술</h4>
-                      <p>● CSS animation 속성과 JS를 이용한 스크롤 animation,<br />
+                      <p><VscCircleFilled /> CSS animation 속성과 JS를 이용한 스크롤 animation,<br />
                       마우스 Hover 인터렉션 등 구현.</p>
                     </li>
                   </ul>
@@ -134,16 +136,16 @@ function SubPage() {
                 </div>
               </div>
             <div className='sub_video1'>
-                <video id="video" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
-                <source src={Comp3} width="300" height="300" autoplay></source>
+                <video id="video" preload="auto" autoPlay={true} loop="loop" muted="muted" volume="0">
+                <source src={Comp3} width="300" height="300"></source>
                 </video>
             </div>
           </div>
         </article>
-        <div class='sub_btn'> 
-          <div class='sub_btn_1'>        
-          <button>Page <MdOpenInNew /></button>
-          <button>Repository <MdOpenInNew /></button>
+        <div className='sub_btn'> 
+          <div className='sub_btn_1'>        
+          <button><a href="https://jihae96.github.io/webProject02/">Page <MdOpenInNew /></a></button>
+          <button><a href='https://github.com/jihae96/webProject02'>Repository <MdOpenInNew /></a></button>
           </div>
         </div>
       </section>
@@ -168,13 +170,12 @@ function SubPage() {
                 <li>
                   <ul className='sub_cont_text'>
                     <li>
-                      <h4>1.웹 표준 준수</h4>
-                      <p>● HTML/CSS WC 유효성 검사 Pass</p>
-                    </li>
-                    <li>
-                      <h4>3.주요기술</h4>
-                      <p>● React를 이용한 로그인 및 페이지 구현,  마우스 Hover 인터렉션 등 구현.</p>
-                      <p>● props 를 통해 컴포넌트에게 값 전달하기</p>
+                      <h4>1.주요기술</h4>
+                      <p><VscCircleFilled /> firebase를 이용한 스토리지, 실시간 데이터 베이스 구현 및 로그인 기능</p>
+                      <p><VscCircleFilled /> router를 이용한 페이지 정리화와 이동 기능</p>
+                      <p><VscCircleFilled /> scss를 이용한 css정리 구현</p>
+                      <p><VscCircleFilled /> React-icons를 이용한 아이콘 연결</p>
+                      <p><VscCircleFilled /> props를 통해 컴포넌트에게 값 전달하기</p>
                     </li>
                   </ul>
                 </li>
@@ -185,16 +186,17 @@ function SubPage() {
                 </div>
             </div>
             <div className='sub_video2'>
-                <video id="video" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
-                <source src={Comp4} width="300" height="600" autoplay></source>
+                <video id="video" preload="auto" autoPlay={true} loop="loop" muted="muted" volume="0">
+                <source src={Comp4} width="300" height="600"></source>
                 </video>
             </div> 
           </div>
         </article>
-        <div class='sub_btn'> 
-          <div class='sub_btn_1'>        
-          <button>Page <MdOpenInNew /></button>
-          <button>Repository <MdOpenInNew /></button>
+        <div className='sub_btn'> 
+          <div className='sub_btn_1'>        
+          <button><a href="https://jihae96.github.io/kakao_app/">Page <MdOpenInNew /></a></button>
+          <button><a href="https://github.com/jihae96/kakao_app">Repository <MdOpenInNew /></a></button>
+          {/* 뜨는 팝업페이지가 모바일 크기로 지정해야함 */}
           </div>
         </div>
       </section>
@@ -208,7 +210,7 @@ function SubPage() {
             <div className='sub_video'></div>
             <div className='sub_line'></div>
             <div className='sub_content'>
-              <h3>NETFLIX APP<span>100%</span></h3>
+              <h3>REACT NETFLIX APP<span>100%</span></h3>
               <p className='sub_date'>2022.11.02-2022.11.08</p>
               <ul className='sub_lang'>
                 <li>CSS</li>
@@ -220,16 +222,15 @@ function SubPage() {
                   <ul className='sub_cont_text'>
                     <li>
                       <h4>1.반응형 웹 제작</h4>
-                      <p>● pc,tablet,mobile</p>
-                    </li>
-                    <li>
-                      <h4>2.웹 표준 준수</h4>
-                      <p>● HTML/CSS WC 유효성 검사 Pass</p>
+                      <p><VscCircleFilled /> pc,tablet,mobile</p>
                     </li>
                     <li>
                       <h4>3.주요기술</h4>
-                      <p>● React를 이용한 로그인 및 페이지 구현,  마우스 Hover 인터렉션 등 구현.</p>
-                      <p>● props 를 통해 컴포넌트에게 값 전달하기</p>
+                      <p><VscCircleFilled /> firebase를 이용한 스토리지 구현 및 로그인 기능</p>
+                      <p><VscCircleFilled /> router를 이용한 페이지 정리화와 이동 기능</p>
+                      <p><VscCircleFilled /> Swiper Slid 구현</p>
+                      <p><VscCircleFilled /> 외부 데이터를 props를 통해 컴포넌트에게 값 전달하기</p>
+                      <p><VscCircleFilled /> Modal창을 이용한 팝업창 구현</p>
                     </li>
                   </ul>
                 </li>
@@ -240,16 +241,17 @@ function SubPage() {
                 </div>
             </div>
             <div className='sub_video2'>
-                <video id="video" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
-                <source src={Comp5} width="300" height="600" autoplay></source>
+                <video id="video" preload="auto" autoPlay={true} loop="loop" muted="muted" volume="0">
+                <source src={Comp5} width="300" height="600"></source>
                 </video>
             </div> 
           </div>
         </article>
-        <div class='sub_btn'> 
-          <div class='sub_btn_1'>        
-          <button>Page <MdOpenInNew /></button>
-          <button>Repository <MdOpenInNew /></button>
+        <div className='sub_btn'> 
+          <div className='sub_btn_1'>        
+          <button><a href="https://jihae96.github.io/netflix_app/">Page <MdOpenInNew /></a></button>
+          <button><a href="https://github.com/jihae96/netflix_app">Repository <MdOpenInNew /></a></button>
+          {/* 뜨는 팝업페이지가 모바일 크기로 지정해야함 */}
           </div>
         </div>
       </section>
@@ -296,15 +298,15 @@ function SubPage() {
             </div>
           </div>
           <div className='sub_video2'>
-                <video id="video" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
-                <source src={Comp6} width="300" height="600" autoplay></source>
+                <video id="video" preload="auto" autoPlay={true} loop="loop" muted="muted" volume="0">
+                <source src={Comp6} width="300" height="600"></source>
                 </video>
             </div> 
         </article>
-        <div class='sub_btn'> 
-          <div class='sub_btn_1'>        
-          <button>Page <MdOpenInNew /></button>
-          <button>Repository <MdOpenInNew /></button>
+        <div className='sub_btn'> 
+          <div className='sub_btn_1'>        
+          <button><a href="https://jihae96.github.io/portfolio_forest/">Page <MdOpenInNew /></a></button>
+          <button><a href="https://github.com/jihae96/portfolio_forest">Repository <MdOpenInNew /></a></button>
           <button>기획파일 <MdOpenInNew /></button>
           <button>behance <MdOpenInNew /></button>
           </div>

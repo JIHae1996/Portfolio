@@ -1,14 +1,15 @@
-.Footer_ul{
-    display: flex;
-    position: fixed;
-    bottom: 32px;
-    right: 20px;
-    a{
-        font-size: 35px;
-        padding-left: 10px;
-        transition: all 0.2s linear 0s;
-        &:hover{
-            color: #8247FF;
-        }
+.Footer_ul {
+  display: flex;
+  position: fixed;
+  bottom: 32px;
+  right: 20px;
+  a {
+    font-size: 30px;
+    padding-left: 10px;
+    transition: all 0.2s linear 0s;
+    color: rgba(0, 0, 0, 0.5);
+    &:hover {
+      color: rgba(0, 0, 0, 1);
     }
+  }
 }

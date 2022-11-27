@@ -51,18 +51,18 @@ function Menu({ setModalOpen }) {
         <ul>
           <a>SOCIAL</a>
           <li>
-            <a href="#">
+            <a href="https://github.com/jihae96" target="_blank">
               GITHUB <MdOpenInNew />
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="https://www.behance.net/wlgo333e88d" target="_blank">
               BEHANCE <MdOpenInNew />
             </a>
           </li>
           <li>
-            <a href="#">
-              EMAIL <MdOpenInNew />
+            <a href="https://www.artstation.com/gaon_96" target="_blank">
+              ARTSTATION <MdOpenInNew />
             </a>
           </li>
         </ul>

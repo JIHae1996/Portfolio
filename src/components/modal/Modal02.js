@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react'
 import { FiX } from 'react-icons/fi'
 import '../../styles/OtherModal.scss'
+import '../../styles/modal/animation.scss'
 import Lottie from 'lottie-react'
 
 import community from '../../assets/community.json'

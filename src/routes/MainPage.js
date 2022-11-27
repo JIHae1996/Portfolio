@@ -139,28 +139,6 @@ function MainPage() {
     })
   }
 
-  useEffect(() => {
-    let body = document.querySelector('body')
-    body.onscroll = () => {
-      let wTop = window.pageYOffset
-      let links = document.querySelectorAll('a')
-      let sections = document.querySelectorAll('section')
-      sections.forEach(function (el) {
-        let className = el.getAttribute('className')
-        let coord = el.getBoundingClientRect().top
-        let height = el.clientHeight
-        if (wTop >= coord + wTop && wTop < coord + wTop + height) {
-          links.forEach((l) => {
-            l.classList.remove('active')
-            let attr = l.getAttribute('a')
-            if (attr === '#' + className) {
-              l.classList.add('active')
-            }
-          })
-        }
-      })
-    }
-  }, [])
   return (
     <>
       {/* main_container */}

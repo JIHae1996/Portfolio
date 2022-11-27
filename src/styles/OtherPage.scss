@@ -60,10 +60,13 @@
       background-color: rgba(251, 251, 251, 0.7);
       backdrop-filter: blur(4px);
       cursor: pointer;
-      &:hover > .other_article2_img {
+      a {
+        color: black;
+      }
+      &:hover > a > .other_article2_img {
         opacity: 0;
       }
-      &:hover > .other_article2_content {
+      &:hover > a > .other_article2_content {
         opacity: 1;
       }
       .other_article2_img {
@@ -131,16 +134,19 @@
     }
     .other_article4 {
       position: relative;
-      width: 50%;
+      width: 100%;
       height: 350px;
       background-color: rgba(251, 251, 251, 0.7);
       backdrop-filter: blur(4px);
-      border-radius: 0 0 0 15px;
+      border-radius: 0 0 15px 15px;
       cursor: pointer;
-      &:hover > .other_article4_img {
+      a {
+        color: black;
+      }
+      &:hover > a > .other_article4_img {
         opacity: 0;
       }
-      &:hover > .other_article4_content {
+      &:hover > a > .other_article4_content {
         opacity: 1;
       }
       .other_article4_img {
@@ -148,9 +154,9 @@
         right: 0;
         width: 100%;
         height: 100%;
-        background: url(../assets/ThemeIcon.png) 50% no-repeat;
+        background: url(../assets/artstationbanner.png) 50% no-repeat;
         background-size: cover;
-        border-radius: 0 0 0 15px;
+        border-radius: 0 0 15px 15px;
         opacity: 1;
         transition: all 0.5s linear 0s;
       }

@@ -22,6 +22,10 @@ import 'swiper/css/scrollbar'
 import { VscCircleFilled } from 'react-icons/vsc'
 
 function SubPage() {
+  function OpenPage() {
+    console.log('Hi there, user!')
+  }
+
   return (
     <Swiper
       // install Swiper modules
@@ -93,12 +97,12 @@ function SubPage() {
             <div className="sub_btn">
               <div className="sub_btn_1">
                 <button>
-                  <a href="https://jihae96.github.io/NCSOFT/">
+                  <a href="https://jihae96.github.io/NCSOFT/" target="_blank">
                     Page <MdOpenInNew />
                   </a>
                 </button>
                 <button>
-                  <a href="https://github.com/jihae96/NCSOFT">
+                  <a href="https://github.com/jihae96/NCSOFT" target="_blank">
                     Repository <MdOpenInNew />
                   </a>
                 </button>
@@ -165,12 +169,12 @@ function SubPage() {
             <div className="sub_btn">
               <div className="sub_btn_1">
                 <button>
-                  <a href="https://jihae96.github.io/webProject02/">
+                  <a href="https://jihae96.github.io/webProject02/" target="_blank">
                     Page <MdOpenInNew />
                   </a>
                 </button>
                 <button>
-                  <a href="https://github.com/jihae96/webProject02">
+                  <a href="https://github.com/jihae96/webProject02" target="_blank">
                     Repository <MdOpenInNew />
                   </a>
                 </button>
@@ -234,12 +238,12 @@ function SubPage() {
             <div className="sub_btn">
               <div className="sub_btn_1">
                 <button>
-                  <a href="https://jihae96.github.io/kakao_app/">
+                  <a href="https://jihae96.github.io/kakao_app/" target="_blank">
                     Page <MdOpenInNew />
                   </a>
                 </button>
                 <button>
-                  <a href="https://github.com/jihae96/kakao_app">
+                  <a href="https://github.com/jihae96/kakao_app" target="_blank">
                     Repository <MdOpenInNew />
                   </a>
                 </button>
@@ -310,12 +314,12 @@ function SubPage() {
             <div className="sub_btn">
               <div className="sub_btn_1">
                 <button>
-                  <a href="https://jihae96.github.io/netflix_app/">
+                  <a href="https://jihae96.github.io/netflix_app/" target="_blank">
                     Page <MdOpenInNew />
                   </a>
                 </button>
                 <button>
-                  <a href="https://github.com/jihae96/netflix_app">
+                  <a href="https://github.com/jihae96/netflix_app" target="_blank">
                     Repository <MdOpenInNew />
                   </a>
                 </button>
@@ -347,16 +351,24 @@ function SubPage() {
                       <ul className="sub_cont_text">
                         <li>
                           <h4>1.반응형 웹 제작</h4>
-                          <p>● pc,tablet,mobile</p>
+                          <p>
+                            <VscCircleFilled /> pc,tablet,mobile
+                          </p>
                         </li>
                         <li>
                           <h4>2.웹 표준 준수</h4>
-                          <p>● HTML/CSS WC 유효성 검사 Pass</p>
+                          <p>
+                            <VscCircleFilled /> HTML/CSS WC 유효성 검사 Pass
+                          </p>
                         </li>
                         <li>
                           <h4>3.주요기술</h4>
-                          <p>● React를 이용한 로그인 및 페이지 구현, 마우스 Hover 인터렉션 등 구현.</p>
-                          <p>● props 를 통해 컴포넌트에게 값 전달하기</p>
+                          <p>
+                            <VscCircleFilled /> React를 이용한 로그인 및 페이지 구현, 마우스 Hover 인터렉션 등 구현.
+                          </p>
+                          <p>
+                            <VscCircleFilled /> props 를 통해 컴포넌트에게 값 전달하기
+                          </p>
                         </li>
                       </ul>
                     </li>
@@ -375,20 +387,24 @@ function SubPage() {
             <div className="sub_btn">
               <div className="sub_btn_1">
                 <button>
-                  <a href="https://jihae96.github.io/portfolio_forest/">
+                  <a href="https://jihae96.github.io/portfolio_forest/" target="_blank">
                     Page <MdOpenInNew />
                   </a>
                 </button>
                 <button>
-                  <a href="https://github.com/jihae96/portfolio_forest">
+                  <a href="https://github.com/jihae96/portfolio_forest" target="_blank">
                     Repository <MdOpenInNew />
                   </a>
                 </button>
                 <button>
-                  기획파일 <MdOpenInNew />
+                  <a href="../assets/forest.pdf" download>
+                    기획파일 <MdOpenInNew />
+                  </a>
                 </button>
                 <button>
-                  behance <MdOpenInNew />
+                  <a href="https://www.behance.net/gallery/156630789/forest" target="_blank">
+                    behance <MdOpenInNew />
+                  </a>
                 </button>
               </div>
             </div>

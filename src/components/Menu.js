@@ -1,9 +1,9 @@
-import React, { useRef } from 'react';
-import '../styles/Menu.scss';
-import { MdOpenInNew } from 'react-icons/md';
+import React, { useRef } from 'react'
+import '../styles/Menu.scss'
+import { MdOpenInNew } from 'react-icons/md'
 
 function Menu({ setModalOpen }) {
-  const ref = useRef();
+  const ref = useRef()
 
   return (
     <div className="allMenu" ref={ref}>
@@ -69,7 +69,7 @@ function Menu({ setModalOpen }) {
       </div>
       <div className="topMenu_bg"></div>
     </div>
-  );
+  )
 }
 
-export default Menu;
+export default Menu

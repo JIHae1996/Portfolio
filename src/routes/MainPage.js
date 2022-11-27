@@ -22,6 +22,7 @@ function MainPage() {
   const [scrollIndex, setScrollIndex] = useState(1)
   const [show01, setShow01] = useState(false)
   const [show02, setShow02] = useState(false)
+  const [show03, setShow03] = useState(false)
 
   useEffect(() => {
     const wheelHandler = (e) => {
@@ -51,6 +52,8 @@ function MainPage() {
             behavior: 'smooth'
           })
           setShow01(true)
+          setShow02(false)
+          setShow03(false)
           setScrollIndex(3)
         } else if (scrollTop >= pageHeight && scrollTop < pageHeight * 3) {
           //현재 3페이지
@@ -60,7 +63,9 @@ function MainPage() {
             left: 0,
             behavior: 'smooth'
           })
+          setShow01(false)
           setShow02(true)
+          setShow03(false)
           setScrollIndex(4)
         } else {
           // 현재 4페이지
@@ -71,6 +76,9 @@ function MainPage() {
             behavior: 'smooth'
           })
           setScrollIndex(4)
+          setShow01(false)
+          setShow02(false)
+          setShow03(true)
         }
       } else {
         // 스크롤 올릴 때
@@ -120,22 +128,39 @@ function MainPage() {
     }
   }, [])
 
-  useEffect(() => {
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 750) {
-        setShow01(true)
-      } else if (window.scrollY > 1500) {
-        setShow02(true)
-      } else {
-        setShow01(false)
-        setShow02(false)
-      }
+  const scrollTo = (e) => {
+    e.preventDefault()
+    const t = e.target.getAttribute('a')
+    const section = document.querySelector(t)
+    // window.scrollTo(0, window.pageYOffset + section.getBoundingClientRect().top )
+    section.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
     })
-    return () => {
-      window.removeEventListener('scroll', () => {})
+  }
+
+  useEffect(() => {
+    let body = document.querySelector('body')
+    body.onscroll = () => {
+      let wTop = window.pageYOffset
+      let links = document.querySelectorAll('a')
+      let sections = document.querySelectorAll('section')
+      sections.forEach(function (el) {
+        let className = el.getAttribute('className')
+        let coord = el.getBoundingClientRect().top
+        let height = el.clientHeight
+        if (wTop >= coord + wTop && wTop < coord + wTop + height) {
+          links.forEach((l) => {
+            l.classList.remove('active')
+            let attr = l.getAttribute('a')
+            if (attr === '#' + className) {
+              l.classList.add('active')
+            }
+          })
+        }
+      })
     }
   }, [])
-
   return (
     <>
       {/* main_container */}
@@ -293,12 +318,12 @@ function MainPage() {
         </section>
         <div className="main__bg"></div>
         <div className="main__bg_2"></div>
-        <section className="sub_main">
+        <section className={`sub_main ${show02 && 'sub_main_on'}`}>
           <div>
-            <SubPage className={`main__main ${show02 && 'main__main_on'}`} />
+            <SubPage />
           </div>
         </section>
-        <section className="other_main">
+        <section className={`"other_main ${show03 && '"other_main_on'}`}>
           <div>
             <OtherPage />
           </div>
@@ -307,16 +332,16 @@ function MainPage() {
       <aside>
         <ul id="quick" className="main_quick">
           <li>
-            <a href="#"></a>
+            <a onClick={scrollTo} href="#"></a>
           </li>
           <li>
-            <a href="#"></a>
+            <a onClick={scrollTo} href="#"></a>
           </li>
           <li>
-            <a href="#"></a>
+            <a onClick={scrollTo} href="#"></a>
           </li>
           <li>
-            <a href="#"></a>
+            <a onClick={scrollTo} href="#"></a>
           </li>
         </ul>
       </aside>

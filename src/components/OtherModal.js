@@ -10,8 +10,8 @@ function OtherModal({ setModalOpen }) {
       <div className="OtherModal" ref={ref}>
         <div className="OtherModal_container">
           <div className="OtherModal_main">
-            <span className="modal-close" onClick={() => setModalOpen(false)}>
-              <FiX />
+            <span className="modal-close">
+              <FiX onClick={() => setModalOpen(false)} />
             </span>
           </div>
         </div>

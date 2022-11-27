@@ -234,7 +234,7 @@ function SubPage() {
             <div className="sub_btn">
               <div className="sub_btn_1">
                 <button>
-                  <a href="https://jihae96.github.io/kakao_app/" onclick="window.open(this.href, '_blank', 'width=400, height=600'); return false;">
+                  <a href="https://jihae96.github.io/kakao_app/">
                     Page <MdOpenInNew />
                   </a>
                 </button>

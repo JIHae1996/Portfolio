@@ -30,7 +30,7 @@ function OtherPage() {
             <div className="other_article1_img"></div>
             <div className="other_article1_content">
               <h5>
-                CSS
+                Pure CSS
                 <br />
                 Animation,
               </h5>

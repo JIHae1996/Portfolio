@@ -30,15 +30,11 @@ function OtherPage() {
             <div className="other_article1_img"></div>
             <div className="other_article1_content">
               <h5>
-                The
+                CSS
                 <br />
-                Emoticon,
+                Animation,
               </h5>
-              <p>
-                Jordy
-                <br />
-                animation
-              </p>
+              <p>Jordy</p>
             </div>
           </div>
 

@@ -350,19 +350,7 @@ function SubPage() {
                     <li>
                       <ul className="sub_cont_text">
                         <li>
-                          <h4>1.반응형 웹 제작</h4>
-                          <p>
-                            <VscCircleFilled /> pc,tablet,mobile
-                          </p>
-                        </li>
-                        <li>
-                          <h4>2.웹 표준 준수</h4>
-                          <p>
-                            <VscCircleFilled /> HTML/CSS WC 유효성 검사 Pass
-                          </p>
-                        </li>
-                        <li>
-                          <h4>3.주요기술</h4>
+                          <h4>1.주요기술</h4>
                           <p>
                             <VscCircleFilled /> React를 이용한 로그인 및 페이지 구현, 마우스 Hover 인터렉션 등 구현.
                           </p>

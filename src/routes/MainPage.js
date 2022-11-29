@@ -12,7 +12,8 @@ import DesignTools from '../assets/DesignTools.svg'
 import { MdOpenInNew, MdArrowRightAlt } from 'react-icons/md'
 import OtherPage from './OtherPage'
 import SubPage from './SubPage'
-// import { Circle } from '@react-three/drei'
+
+import { motion } from 'framer-motion'
 
 const DIVIDER_HEIGHT = 5
 
@@ -42,7 +43,10 @@ function MainPage() {
             left: 0,
             behavior: 'smooth'
           })
-          setScrollIndex(2)
+          setShow01(true)
+          setShow02(false)
+          setShow03(false)
+          setScrollIndex(1)
         } else if (scrollTop >= pageHeight && scrollTop < pageHeight * 2) {
           //현재 2페이지
           console.log('현재 2페이지, down')
@@ -51,10 +55,10 @@ function MainPage() {
             left: 0,
             behavior: 'smooth'
           })
-          setShow01(true)
-          setShow02(false)
+          setShow01(false)
+          setShow02(true)
           setShow03(false)
-          setScrollIndex(3)
+          setScrollIndex(2)
         } else if (scrollTop >= pageHeight && scrollTop < pageHeight * 3) {
           //현재 3페이지
           console.log('현재 3페이지, down')
@@ -64,25 +68,13 @@ function MainPage() {
             behavior: 'smooth'
           })
           setShow01(false)
-          setShow02(true)
-          setShow03(false)
-          setScrollIndex(4)
-        } else {
-          // 현재 4페이지
-          console.log('현재 4페이지, down')
-          outerDivRef.current.scrollTo({
-            top: pageHeight * 3 + DIVIDER_HEIGHT * 3,
-            left: 0,
-            behavior: 'smooth'
-          })
-          setScrollIndex(4)
-          setShow01(false)
           setShow02(false)
           setShow03(true)
+          setScrollIndex(3)
         }
       } else {
         // 스크롤 올릴 때
-        if (scrollTop >= 0 && scrollTop < pageHeight) {
+        if (scrollTop >= pageHeight && scrollTop < pageHeight * 2) {
           //현재 1페이지
           console.log('현재 1페이지, up')
           outerDivRef.current.scrollTo({
@@ -90,34 +82,31 @@ function MainPage() {
             left: 0,
             behavior: 'smooth'
           })
-          setScrollIndex(1)
-        } else if (scrollTop >= pageHeight && scrollTop < pageHeight * 2) {
+          setScrollIndex(2)
+        } else if (scrollTop >= pageHeight && scrollTop < pageHeight * 3) {
           //현재 2페이지
           console.log('현재 2페이지, up')
           outerDivRef.current.scrollTo({
-            top: 0,
+            top: pageHeight + DIVIDER_HEIGHT,
             left: 0,
             behavior: 'smooth'
           })
-          setScrollIndex(2)
-        } else if (scrollTop >= pageHeight && scrollTop < pageHeight * 3) {
+          setShow01(true)
+          setShow02(false)
+          setShow03(false)
+          setScrollIndex(3)
+        } else if (scrollTop >= pageHeight && scrollTop < pageHeight * 4) {
           //현재 3페이지
           console.log('현재 3페이지, up')
           outerDivRef.current.scrollTo({
-            top: pageHeight,
+            top: pageHeight * 2 + DIVIDER_HEIGHT * 2,
             left: 0,
             behavior: 'smooth'
           })
-          setScrollIndex(3)
-        } else {
-          // 현재 3페이지
-          console.log('현재 4페이지, up')
-          outerDivRef.current.scrollTo({
-            top: pageHeight + DIVIDER_HEIGHT * 3,
-            left: 0,
-            behavior: 'smooth'
-          })
-          setScrollIndex(3)
+          setShow01(false)
+          setShow02(true)
+          setShow03(false)
+          setScrollIndex(4)
         }
       }
     }
@@ -128,16 +117,15 @@ function MainPage() {
     }
   }, [])
 
-  const scrollTo = (e) => {
-    e.preventDefault()
-    const t = e.target.getAttribute('a')
-    const section = document.querySelector(t)
-    // window.scrollTo(0, window.pageYOffset + section.getBoundingClientRect().top )
-    section.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
-    })
-  }
+  // const scrollTo = (e) => {
+  //   e.preventDefault()
+  //   const t = e.target.getAttribute('a')
+  //   const section = document.querySelector(t)
+  //   section.scrollIntoView({
+  //     behavior: 'smooth',
+  //     block: 'start'
+  //   })
+  // }
 
   return (
     <>
@@ -157,7 +145,16 @@ function MainPage() {
         <section className={`main__main2 ${show01 && 'main__main2_on'}`}>
           <div className="main_content2">
             <div className="profile_1">
-              <h3>이지해 1996.06.18</h3>
+              <motion.h3
+                initial={{ opacity: 0, scale: 0.5 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{
+                  duration: 0.8,
+                  delay: 1,
+                  ease: [0, 0.71, 0.2, 1.01]
+                }}>
+                이지해 1996.06.18
+              </motion.h3>
               <div className="profile_1_1">
                 <p>
                   <strong>을지대학교 성남(4년제)</strong>
@@ -301,7 +298,7 @@ function MainPage() {
             <SubPage />
           </div>
         </section>
-        <section className={`"other_main ${show03 && '"other_main_on'}`}>
+        <section className={`other_main ${show03 && 'other_main_on'}`}>
           <div>
             <OtherPage />
           </div>

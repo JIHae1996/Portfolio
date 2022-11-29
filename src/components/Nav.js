@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
 import logo from '../assets/Portfolio.svg'
 import { BiMenu } from 'react-icons/bi'
 import '../styles/Nav.scss'
@@ -8,8 +7,6 @@ import Menu from './Menu'
 function Nav() {
   const [show, setShow] = useState(false)
   const [modalOpen, setModalOpen] = useState(false)
-
-  const navigate = useNavigate()
 
   const handleClick = () => {
     setModalOpen(true)
@@ -25,7 +22,7 @@ function Nav() {
         setShow(false)
       }
     })
-    // Show값이 if문 기준 true면 배경이 검정 . flase 면 배경이 흰색이 되게 한다.
+    // Show값이 if문 기준 true면 배경이 흰색 . flase 면 배경이 검정이 되게 한다.
     return () => {
       window.removeEventListener('scroll', () => {})
       /*컨포넌트가 더이상 사용되지 않을때는 위쪽의 

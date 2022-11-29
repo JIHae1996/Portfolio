@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 import '../styles/Menu.scss'
 import { MdOpenInNew } from 'react-icons/md'
+import { FiX } from 'react-icons/fi'
 
 function Menu({ setModalOpen }) {
   const ref = useRef()
@@ -10,7 +11,7 @@ function Menu({ setModalOpen }) {
       <div className="topMenu">
         <a href="#"></a>
         <span className="modal-close" onClick={() => setModalOpen(false)}>
-          X
+          <FiX />
         </span>
         <ul>
           <a>INTRO</a>
@@ -49,19 +50,19 @@ function Menu({ setModalOpen }) {
           </li>
         </ul>
         <ul>
-          <a>SOCIAL</a>
+          <a className="Social">SOCIAL</a>
           <li>
-            <a href="https://github.com/jihae96" target="_blank">
+            <a className="socialClass" href="https://github.com/jihae96" target="_blank">
               GITHUB <MdOpenInNew />
             </a>
           </li>
           <li>
-            <a href="https://www.behance.net/wlgo333e88d" target="_blank">
+            <a className="socialClass" href="https://www.behance.net/wlgo333e88d" target="_blank">
               BEHANCE <MdOpenInNew />
             </a>
           </li>
           <li>
-            <a href="https://www.artstation.com/gaon_96" target="_blank">
+            <a className="socialClass" href="https://www.artstation.com/gaon_96" target="_blank">
               ARTSTATION <MdOpenInNew />
             </a>
           </li>

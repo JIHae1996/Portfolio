@@ -63,11 +63,7 @@
         left: 169px;
         top: 219px;
         border-radius: 50%;
-        background: linear-gradient(
-          227.02deg,
-          rgba(248, 248, 248, 0) 9.35%,
-          rgba(122, 122, 122, 0)
-        );
+        background: linear-gradient(227.02deg, rgba(248, 248, 248, 0) 9.35%, rgba(122, 122, 122, 0));
         box-shadow: -16px 19px 18px -5px rgba(0, 0, 0, 0.25);
       }
       .sub_video1 {
@@ -220,12 +216,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background: conic-gradient(
-        from 207.88deg at 58.47% 83.98%,
-        #afafaf 0deg,
-        rgba(231, 231, 231, 0) 360deg
-      ),
-      #ffffff;
+    background: conic-gradient(from 207.88deg at 58.47% 83.98%, #afafaf 0deg, rgba(231, 231, 231, 0) 360deg), #ffffff;
     filter: blur(1px);
   }
 }

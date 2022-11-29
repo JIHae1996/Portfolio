@@ -18,11 +18,16 @@
     top: 15%;
     border-radius: 10px;
     overflow: hidden;
+    animation: OtherModal_ani 0.2s linear forwards 0s;
     .modal-close {
       position: absolute;
+      width: 25px;
+      height: 25px;
       top: 20px;
       right: 20px;
       font-size: 30px;
+      text-align: center;
+      line-height: 150%;
     }
   }
 }
@@ -36,3 +41,12 @@
 //   background: rgba(0, 0, 0, 0.8);
 //   backdrop-filter: blur(5px);
 // }
+
+@keyframes OtherModal_ani {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

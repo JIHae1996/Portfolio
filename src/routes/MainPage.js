@@ -117,16 +117,6 @@ function MainPage() {
     }
   }, [])
 
-  // const scrollTo = (e) => {
-  //   e.preventDefault()
-  //   const t = e.target.getAttribute('a')
-  //   const section = document.querySelector(t)
-  //   section.scrollIntoView({
-  //     behavior: 'smooth',
-  //     block: 'start'
-  //   })
-  // }
-
   return (
     <>
       {/* main_container */}

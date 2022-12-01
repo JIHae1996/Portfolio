@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.e68d638a.css",
-    "main.js": "/Portfolio/static/js/main.34eb0c52.js",
+    "main.css": "/Portfolio/static/css/main.1493c62c.css",
+    "main.js": "/Portfolio/static/js/main.bc8f3263.js",
     "static/media/Comp3.mp4": "/Portfolio/static/media/Comp3.c88bb4f3d9ff23122af9.mp4",
     "static/media/Comp2.mp4": "/Portfolio/static/media/Comp2.5309b9adae3d1550f3ae.mp4",
     "static/media/Comp5.mp4": "/Portfolio/static/media/Comp5.f735de486405558defbd.mp4",
     "static/media/Comp6.mp4": "/Portfolio/static/media/Comp6.b39fb3173335de8dab17.mp4",
     "static/media/artstationbanner.png": "/Portfolio/static/media/artstationbanner.baf8bb1fffecbb193947.png",
     "static/media/Comp4.mp4": "/Portfolio/static/media/Comp4.5ea8584c4b063b43b71d.mp4",
+    "static/media/1.png": "/Portfolio/static/media/1.4c6464970ad639c63361.png",
+    "static/media/2.png": "/Portfolio/static/media/2.76b4da5c005476ebb707.png",
     "static/media/yangyangmockup.png": "/Portfolio/static/media/yangyangmockup.572375630818e63dc23e.png",
     "static/media/lottieicons.png": "/Portfolio/static/media/lottieicons.fbb929fbc05ad17b272d.png",
     "static/media/jordy.png": "/Portfolio/static/media/jordy.826a0afc0d973a9818e7.png",
@@ -17,11 +19,11 @@
     "static/media/ToolIcon.svg": "/Portfolio/static/media/ToolIcon.d4190397420ca0cc92609432a9efd19a.svg",
     "index.html": "/Portfolio/index.html",
     "static/media/cusur.svg": "/Portfolio/static/media/cusur.34c2e5d754688e2c28dc.svg",
-    "main.e68d638a.css.map": "/Portfolio/static/css/main.e68d638a.css.map",
-    "main.34eb0c52.js.map": "/Portfolio/static/js/main.34eb0c52.js.map"
+    "main.1493c62c.css.map": "/Portfolio/static/css/main.1493c62c.css.map",
+    "main.bc8f3263.js.map": "/Portfolio/static/js/main.bc8f3263.js.map"
   },
   "entrypoints": [
-    "static/css/main.e68d638a.css",
-    "static/js/main.34eb0c52.js"
+    "static/css/main.1493c62c.css",
+    "static/js/main.bc8f3263.js"
   ]
 }

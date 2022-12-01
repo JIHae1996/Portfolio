@@ -58,19 +58,13 @@ function SubPage() {
                       <li>
                         <ul className="sub_cont_text">
                           <li>
-                            <h4>1.반응형 웹 제작</h4>
-                            <p>
-                              <VscCircleFilled className="VscCircleFilled" /> pc,tablet,mobile
-                            </p>
-                          </li>
-                          <li>
-                            <h4>2.웹 표준 준수</h4>
+                            <h4>1.웹 표준 준수</h4>
                             <p>
                               <VscCircleFilled className="VscCircleFilled" /> HTML/CSS WC 유효성 검사 Pass
                             </p>
                           </li>
                           <li>
-                            <h4>3.주요기술</h4>
+                            <h4>2.주요기술</h4>
                             <p>
                               <VscCircleFilled className="VscCircleFilled" /> CSS animation 속성과 JS를 이용한 스크롤 animation,
                               <br />
@@ -94,12 +88,12 @@ function SubPage() {
               <div className="sub_btn">
                 <div className="sub_btn_1">
                   <button>
-                    <a href="https://jihae96.github.io/NCSOFT/" target="_blank">
+                    <a onClick={() => window.open('https://jihae96.github.io/NCSOFT/', '_blank')}>
                       Page <MdOpenInNew className="MdOpenInNew" />
                     </a>
                   </button>
                   <button>
-                    <a href="https://github.com/jihae96/NCSOFT" target="_blank">
+                    <a onClick={() => window.open('https://github.com/jihae96/NCSOFT', '_blank')}>
                       Repository <MdOpenInNew className="MdOpenInNew" />
                     </a>
                   </button>
@@ -166,12 +160,12 @@ function SubPage() {
               <div className="sub_btn">
                 <div className="sub_btn_1">
                   <button>
-                    <a href="https://jihae96.github.io/webProject02/" target="_blank">
+                    <a onClick={() => window.open('https://jihae96.github.io/webProject02/', '_blank')}>
                       Page <MdOpenInNew className="MdOpenInNew" />
                     </a>
                   </button>
                   <button>
-                    <a href="https://github.com/jihae96/webProject02" target="_blank">
+                    <a onClick={() => window.open('https://github.com/jihae96/webProject02', '_blank')}>
                       Repository <MdOpenInNew className="MdOpenInNew" />
                     </a>
                   </button>
@@ -235,12 +229,12 @@ function SubPage() {
               <div className="sub_btn">
                 <div className="sub_btn_1">
                   <button>
-                    <a href="https://jihae96.github.io/kakao_app/" target="_blank">
+                    <a onClick={() => window.open('https://jihae96.github.io/kakao_app/', '_blank', 'width=480, height=1200')}>
                       Page <MdOpenInNew className="MdOpenInNew" />
                     </a>
                   </button>
                   <button>
-                    <a href="https://github.com/jihae96/kakao_app" target="_blank">
+                    <a onClick={() => window.open('https://github.com/jihae96/kakao_app', '_blank')}>
                       Repository <MdOpenInNew className="MdOpenInNew" />
                     </a>
                   </button>
@@ -311,12 +305,12 @@ function SubPage() {
               <div className="sub_btn">
                 <div className="sub_btn_1">
                   <button>
-                    <a href="https://jihae96.github.io/netflix_app/" target="_blank">
+                    <a onClick={() => window.open('https://jihae96.github.io/netflix_app/', '_blank', 'width=480, height=1200')}>
                       Page <MdOpenInNew className="MdOpenInNew" />
                     </a>
                   </button>
                   <button>
-                    <a href="https://github.com/jihae96/netflix_app" target="_blank">
+                    <a onClick={() => window.open('https://github.com/jihae96/netflix_app', '_blank')}>
                       Repository <MdOpenInNew className="MdOpenInNew" />
                     </a>
                   </button>
@@ -372,22 +366,22 @@ function SubPage() {
               <div className="sub_btn">
                 <div className="sub_btn_1">
                   <button>
-                    <a href="https://jihae96.github.io/portfolio_forest/" target="_blank">
+                    <a onClick={() => window.open('https://jihae96.github.io/portfolio_forest/', '_blank', 'width=480, height=1200')}>
                       Page <MdOpenInNew className="MdOpenInNew" />
                     </a>
                   </button>
                   <button>
-                    <a href="https://github.com/jihae96/portfolio_forest" target="_blank">
+                    <a onClick={() => window.open('https://github.com/jihae96/portfolio_forest', '_blank')}>
                       Repository <MdOpenInNew className="MdOpenInNew" />
                     </a>
                   </button>
                   <button>
-                    <a href="https://drive.google.com/drive/u/0/folders/1kNbsJDTcfzt-8mN7mxS3QXRRLLUp-Bv1" download>
+                    <a onClick={() => window.open('https://drive.google.com/drive/u/0/folders/1kNbsJDTcfzt-8mN7mxS3QXRRLLUp-Bv1', '_blank')}>
                       기획파일 <MdOpenInNew className="MdOpenInNew" />
                     </a>
                   </button>
                   <button>
-                    <a href="https://www.behance.net/gallery/156630789/forest" target="_blank">
+                    <a onClick={() => window.open('https://www.behance.net/gallery/156630789/forest', '_blank')}>
                       behance <MdOpenInNew className="MdOpenInNew" />
                     </a>
                   </button>

@@ -11,7 +11,7 @@ function Menu({ setModalOpen }) {
       <div className="topMenu">
         <a href="#"></a>
         <span className="modal-close" onClick={() => setModalOpen(false)}>
-          <FiX />
+          <FiX className="modal-close_fix" />
         </span>
         <ul>
           <a>INTRO</a>
@@ -40,7 +40,7 @@ function Menu({ setModalOpen }) {
         <ul className="border_none">
           <li className="OTHER">
             <ul>
-              <a>OTHER</a>
+              <a className="title_a">OTHER</a>
               <li>
                 <a href="#">EMOTICON</a>
               </li>
@@ -54,20 +54,19 @@ function Menu({ setModalOpen }) {
           </li>
           <li className="Social">
             <ul>
-              <a>SOCIAL</a>
               <li>
                 <a className="socialClass" href="https://github.com/jihae96" target="_blank">
-                  GITHUB <MdOpenInNew />
+                  GITHUB <MdOpenInNew className="MdOpenInNew" />
                 </a>
               </li>
               <li>
                 <a className="socialClass" href="https://www.behance.net/wlgo333e88d" target="_blank">
-                  BEHANCE <MdOpenInNew />
+                  BEHANCE <MdOpenInNew className="MdOpenInNew" />
                 </a>
               </li>
               <li>
                 <a className="socialClass" href="https://www.artstation.com/gaon_96" target="_blank">
-                  ARTSTATION <MdOpenInNew />
+                  ARTSTATION <MdOpenInNew className="MdOpenInNew" />
                 </a>
               </li>
             </ul>

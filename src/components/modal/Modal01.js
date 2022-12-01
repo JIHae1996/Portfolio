@@ -17,7 +17,7 @@ function Modal01({ setModalOpen }) {
       <div className="OtherModal_container">
         <div className="OtherModal_main" ref={ref}>
           <span className="modal-close" onClick={() => setModalOpen(false)}>
-            <FiX />
+            <FiX className="modal-close_fix" />
           </span>
           <div class="jordy-container">
             <div class="jordy">

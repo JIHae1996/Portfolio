@@ -32,7 +32,7 @@ function Modal02({ setModalOpen }) {
       <div className="OtherModal_container">
         <div className="OtherModal_main" ref={ref}>
           <span className="modal-close" onClick={() => setModalOpen(false)}>
-            <FiX />
+            <FiX className="modal-close_fix" />
           </span>
           <h2>Json animation</h2>
           <ul className="List">

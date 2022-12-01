@@ -37,34 +37,40 @@ function Menu({ setModalOpen }) {
             <a href="#">FOREST</a>
           </li>
         </ul>
-        <ul>
-          <a>OTHER</a>
-          <li>
-            <a href="#">EMOTICON</a>
+        <ul className="border_none">
+          <li className="OTHER">
+            <ul>
+              <a>OTHER</a>
+              <li>
+                <a href="#">EMOTICON</a>
+              </li>
+              <li>
+                <a href="#">ANIMATION</a>
+              </li>
+              <li>
+                <a href="#">DESIGN WORK</a>
+              </li>
+            </ul>
           </li>
-          <li>
-            <a href="#">ANIMATION</a>
-          </li>
-          <li>
-            <a href="#">DESIGN WORK</a>
-          </li>
-        </ul>
-        <ul>
-          <a className="Social">SOCIAL</a>
-          <li>
-            <a className="socialClass" href="https://github.com/jihae96" target="_blank">
-              GITHUB <MdOpenInNew />
-            </a>
-          </li>
-          <li>
-            <a className="socialClass" href="https://www.behance.net/wlgo333e88d" target="_blank">
-              BEHANCE <MdOpenInNew />
-            </a>
-          </li>
-          <li>
-            <a className="socialClass" href="https://www.artstation.com/gaon_96" target="_blank">
-              ARTSTATION <MdOpenInNew />
-            </a>
+          <li className="Social">
+            <ul>
+              <a>SOCIAL</a>
+              <li>
+                <a className="socialClass" href="https://github.com/jihae96" target="_blank">
+                  GITHUB <MdOpenInNew />
+                </a>
+              </li>
+              <li>
+                <a className="socialClass" href="https://www.behance.net/wlgo333e88d" target="_blank">
+                  BEHANCE <MdOpenInNew />
+                </a>
+              </li>
+              <li>
+                <a className="socialClass" href="https://www.artstation.com/gaon_96" target="_blank">
+                  ARTSTATION <MdOpenInNew />
+                </a>
+              </li>
+            </ul>
           </li>
         </ul>
       </div>

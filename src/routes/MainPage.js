@@ -181,7 +181,7 @@ function MainPage() {
             <div className="profile_line"></div>
             <div className="profile_2">
               <div className="profile_2_1">
-                <ul>
+                <ul className="profile_2_1_ul">
                   <p>2021.04 - 2021.09</p>
                   <p>
                     <strong>캐릭터 콘텐츠 스타트업 미디어콘텐츠팀 사원(정규직)</strong>
@@ -206,7 +206,7 @@ function MainPage() {
                       비즈니스플랜 레이아웃 정리
                     </p>
                     <p>
-                      <MdArrowRightAlt />
+                      <MdArrowRightAlt className="MdArrowRightAlt" />
                       G밸리 수출 상담회, 프랑스 안시 MIFA, 대기업 임원 멘토링 분야 기획서 통과
                     </p>
                   </li>
@@ -218,7 +218,7 @@ function MainPage() {
                       <br />자 회사 캐릭터를 이용한 갤럭시 테마 앱 디자인
                     </p>
                     <p>
-                      <MdArrowRightAlt />
+                      <MdArrowRightAlt className="MdArrowRightAlt" />
                       삼성 포트폴리오 통과 및 제작, 런칭, 프로모션 과정까지 1인 제작
                     </p>
                   </li>

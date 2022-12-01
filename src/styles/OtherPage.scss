@@ -1,177 +1,550 @@
-.Otherpage_Modal {
-  position: fixed;
-  z-index: 1000 !important;
-  top: 0;
-  left: 0;
-}
-.other_section {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  padding: 150px 0;
-  border-radius: 15px;
-  .other_content {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    .other_article1 {
-      position: relative;
-      width: 25%;
-      height: 350px;
-      background-color: rgba(251, 251, 251, 0.7);
-      border-radius: 15px 15px 0 0;
-      backdrop-filter: blur(4px);
-      transition: all 0.5s linear 0s;
-      cursor: pointer;
-      &:hover > .other_article1_img {
-        opacity: 0;
-      }
-      &:hover > .other_article1_content {
-        opacity: 1;
-      }
-      .other_article1_img {
-        opacity: 1;
+@media screen and (max-width: 768px) {
+  .Otherpage_Modal {
+    position: fixed;
+    z-index: 1000 !important;
+    top: 0;
+    left: 0;
+  }
+  .other_section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 100px 0;
+    border-radius: 15px;
+    .other_content {
+      width: 90%;
+      height: 90%;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      .other_article1 {
+        position: relative;
         width: 100%;
-        height: 100%;
-        background: url(../assets/jordy.png) 50% no-repeat;
-        background-size: cover;
-        border-radius: 15px 0 0 0;
+        height: 180px;
+        background-color: rgba(251, 251, 251, 0.7);
+        border-radius: 15px 15px 0 0;
+        backdrop-filter: blur(4px);
         transition: all 0.5s linear 0s;
-      }
-      .other_article1_content {
-        opacity: 0;
-        position: absolute;
-        right: 80px;
-        top: 50%;
-        transform: translateY(-50%);
-        transition: all 0.5s linear 0s;
-        h5 {
-          font-size: 50px;
+        cursor: pointer;
+        &:hover > .other_article1_img {
+          opacity: 0;
         }
-        p {
-          font-size: 30px;
+        &:hover > .other_article1_content {
+          opacity: 1;
+        }
+        .other_article1_img {
+          opacity: 1;
+          width: 100%;
+          height: 100%;
+          background: url(../assets/jordy.png) 50% no-repeat;
+          background-size: cover;
+          border-radius: 15px 15px 0 0;
+          transition: all 0.5s linear 0s;
+        }
+        .other_article1_content {
+          opacity: 0;
+          position: absolute;
+          left: 50%;
+          top: 40px;
+          transform: translateX(-50%);
+          transition: all 0.5s linear 0s;
+
+          h5 {
+            font-size: 25px;
+          }
+          p {
+            font-size: 15px;
+          }
         }
       }
-    }
-    .other_article2 {
-      position: relative;
-      width: 50%;
-      height: 350px;
-      background-color: rgba(251, 251, 251, 0.7);
-      backdrop-filter: blur(4px);
-      cursor: pointer;
-      a {
-        color: black;
-      }
-      &:hover > a > .other_article2_img {
-        opacity: 0;
-      }
-      &:hover > a > .other_article2_content {
-        opacity: 1;
-      }
-      .other_article2_img {
-        position: absolute;
-        right: 0;
+      .other_article2 {
+        position: relative;
         width: 100%;
-        height: 100%;
-        background: url(../assets/yangyangmockup.png) 50% no-repeat;
-        background-size: cover;
-        opacity: 1;
-        transition: all 0.5s linear 0s;
-      }
-      .other_article2_content {
-        position: absolute;
-        left: 40px;
-        bottom: 100px;
-        opacity: 0;
-        transition: all 0.5s linear 0s;
-        h5 {
-          font-size: 50px;
+        height: 180px;
+        background-color: rgba(251, 251, 251, 0.7);
+        backdrop-filter: blur(4px);
+        cursor: pointer;
+        a {
+          color: black;
         }
-        p {
-          font-size: 30px;
+        &:hover > a > .other_article2_img {
+          opacity: 0;
+        }
+        &:hover > a > .other_article2_content {
+          opacity: 1;
+        }
+        .other_article2_img {
+          position: absolute;
+          right: 0;
+          width: 100%;
+          height: 100%;
+          background: url(../assets/yangyangmockup.png) 50% no-repeat;
+          background-size: cover;
+          opacity: 1;
+          transition: all 0.5s linear 0s;
+        }
+        .other_article2_content {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: 50px;
+          opacity: 0;
+          transition: all 0.5s linear 0s;
+          h5 {
+            font-size: 25px;
+          }
+          p {
+            font-size: 15px;
+          }
         }
       }
-    }
-    .other_article3 {
-      position: relative;
-      width: 25%;
-      height: 350px;
-      background-color: rgba(44, 44, 44, 0.7);
-      backdrop-filter: blur(4px);
-      border-radius: 0 15px 0 0;
-      cursor: pointer;
-      &:hover > .other_article3_img {
-        opacity: 0;
-      }
-      &:hover > .other_article3_content {
-        opacity: 1;
-      }
-      .other_article3_img {
+      .other_article3 {
+        position: relative;
         width: 100%;
-        height: 100%;
-        background: url(../assets/lottieicons.png) 50% no-repeat;
-        background-size: cover;
-        opacity: 1;
-        transition: all 0.5s linear 0s;
-        border-radius: 0 15px 0 0;
-      }
-      .other_article3_content {
-        position: absolute;
-        right: 80px;
-        top: 100px;
-        opacity: 0;
-        transition: all 0.5s linear 0s;
-        h5 {
-          font-size: 50px;
-          color: #fff;
+        height: 180px;
+        background-color: rgba(44, 44, 44, 0.7);
+        backdrop-filter: blur(4px);
+        cursor: pointer;
+        &:hover > .other_article3_img {
+          opacity: 0;
         }
-        p {
-          font-size: 30px;
-          color: #fff;
+        &:hover > .other_article3_content {
+          opacity: 1;
+        }
+        .other_article3_img {
+          width: 100%;
+          height: 100%;
+          background: url(../assets/lottieicons.png) 50% no-repeat;
+          background-size: cover;
+          opacity: 1;
+          transition: all 0.5s linear 0s;
+        }
+        .other_article3_content {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: 40px;
+          opacity: 0;
+          transition: all 0.5s linear 0s;
+          h5 {
+            font-size: 25px;
+            color: #fff;
+          }
+          p {
+            font-size: 15px;
+            color: #fff;
+          }
         }
       }
-    }
-    .other_article4 {
-      position: relative;
-      width: 100%;
-      height: 350px;
-      background-color: rgba(251, 251, 251, 0.7);
-      backdrop-filter: blur(4px);
-      border-radius: 0 0 15px 15px;
-      cursor: pointer;
-      a {
-        color: black;
-      }
-      &:hover > a > .other_article4_img {
-        opacity: 0;
-      }
-      &:hover > a > .other_article4_content {
-        opacity: 1;
-      }
-      .other_article4_img {
-        position: absolute;
-        right: 0;
+      .other_article4 {
+        position: relative;
         width: 100%;
-        height: 100%;
-        background: url(../assets/artstationbanner.png) 50% no-repeat;
-        background-size: cover;
+        height: 180px;
+        background-color: rgba(251, 251, 251, 0.7);
+        backdrop-filter: blur(4px);
         border-radius: 0 0 15px 15px;
-        opacity: 1;
-        transition: all 0.5s linear 0s;
-      }
-      .other_article4_content {
-        position: absolute;
-        left: 40px;
-        bottom: 100px;
-        opacity: 0;
-        transition: all 0.5s linear 0s;
-        h5 {
-          font-size: 50px;
+        cursor: pointer;
+        a {
+          color: black;
         }
-        p {
-          font-size: 30px;
+        &:hover > a > .other_article4_img {
+          opacity: 0;
+        }
+        &:hover > a > .other_article4_content {
+          opacity: 1;
+        }
+        .other_article4_img {
+          position: absolute;
+          right: 0;
+          width: 100%;
+          height: 100%;
+          background: url(../assets/2.png) 50% no-repeat;
+          background-size: cover;
+          border-radius: 0 0 15px 15px;
+          opacity: 1;
+          transition: all 0.5s linear 0s;
+        }
+        .other_article4_content {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: 60px;
+          opacity: 0;
+          transition: all 0.5s linear 0s;
+          h5 {
+            font-size: 25px;
+          }
+          p {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .Otherpage_Modal {
+    position: fixed;
+    z-index: 1000 !important;
+    top: 0;
+    left: 0;
+  }
+  .other_section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 150px 0;
+    border-radius: 15px;
+    .other_content {
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      .other_article1 {
+        position: relative;
+        width: 50%;
+        height: 350px;
+        background-color: rgba(251, 251, 251, 0.7);
+        border-radius: 15px 15px 0 0;
+        backdrop-filter: blur(4px);
+        transition: all 0.5s linear 0s;
+        cursor: pointer;
+        &:hover > .other_article1_img {
+          opacity: 0;
+        }
+        &:hover > .other_article1_content {
+          opacity: 1;
+        }
+        .other_article1_img {
+          opacity: 1;
+          width: 100%;
+          height: 100%;
+          background: url(../assets/jordy.png) 50% no-repeat;
+          background-size: cover;
+          border-radius: 15px 0 0 0;
+          transition: all 0.5s linear 0s;
+        }
+        .other_article1_content {
+          opacity: 0;
+          position: absolute;
+          left: 50%;
+          top: 130px;
+          transform: translateX(-50%);
+          transition: all 0.5s linear 0s;
+          h5 {
+            font-size: 30px;
+          }
+          p {
+            font-size: 20px;
+          }
+        }
+      }
+      .other_article2 {
+        position: relative;
+        width: 50%;
+        height: 350px;
+        background-color: rgba(251, 251, 251, 0.7);
+        backdrop-filter: blur(4px);
+        cursor: pointer;
+        a {
+          color: black;
+        }
+        &:hover > a > .other_article2_img {
+          opacity: 0;
+        }
+        &:hover > a > .other_article2_content {
+          opacity: 1;
+        }
+        .other_article2_img {
+          position: absolute;
+          right: 0;
+          width: 100%;
+          height: 100%;
+          background: url(../assets/yangyangmockup.png) 50% no-repeat;
+          background-size: cover;
+          opacity: 1;
+          transition: all 0.5s linear 0s;
+          border-radius: 0 15px 0 0;
+        }
+        .other_article2_content {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: 130px;
+          opacity: 0;
+          transition: all 0.5s linear 0s;
+          border-radius: 0 15px 0 0;
+          h5 {
+            font-size: 30px;
+          }
+          p {
+            font-size: 20px;
+          }
+        }
+      }
+      .other_article3 {
+        position: relative;
+        width: 50%;
+        height: 350px;
+        background-color: rgba(44, 44, 44, 0.7);
+        backdrop-filter: blur(4px);
+        border-radius: 0 0 0 15px;
+        cursor: pointer;
+        &:hover > .other_article3_img {
+          opacity: 0;
+        }
+        &:hover > .other_article3_content {
+          opacity: 1;
+        }
+        .other_article3_img {
+          width: 100%;
+          height: 100%;
+          background: url(../assets/lottieicons.png) 50% no-repeat;
+          background-size: cover;
+          opacity: 1;
+          transition: all 0.5s linear 0s;
+          border-radius: 0 0 0 15px;
+        }
+        .other_article3_content {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          top: 100px;
+          opacity: 0;
+          transition: all 0.5s linear 0s;
+          h5 {
+            font-size: 30px;
+            color: #fff;
+          }
+          p {
+            font-size: 20px;
+            color: #fff;
+          }
+        }
+      }
+      .other_article4 {
+        position: relative;
+        width: 50%;
+        height: 350px;
+        background-color: rgba(251, 251, 251, 0.7);
+        backdrop-filter: blur(4px);
+        border-radius: 0 0 0 15px;
+        cursor: pointer;
+        a {
+          color: black;
+        }
+        &:hover > a > .other_article4_img {
+          opacity: 0;
+        }
+        &:hover > a > .other_article4_content {
+          opacity: 1;
+        }
+        .other_article4_img {
+          position: absolute;
+          right: 0;
+          width: 100%;
+          height: 100%;
+          background: url(../assets/1.png) 50% no-repeat;
+          background-size: cover;
+          border-radius: 0 0 15px 0;
+          opacity: 1;
+          transition: all 0.5s linear 0s;
+        }
+        .other_article4_content {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: 100px;
+          opacity: 0;
+          transition: all 0.5s linear 0s;
+          h5 {
+            font-size: 30px;
+          }
+          p {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1025px) {
+  .Otherpage_Modal {
+    position: fixed;
+    z-index: 1000 !important;
+    top: 0;
+    left: 0;
+  }
+  .other_section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 150px 0;
+    border-radius: 15px;
+    .other_content {
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      .other_article1 {
+        position: relative;
+        width: 25%;
+        height: 350px;
+        background-color: rgba(251, 251, 251, 0.7);
+        border-radius: 15px 15px 0 0;
+        backdrop-filter: blur(4px);
+        transition: all 0.5s linear 0s;
+        cursor: pointer;
+        &:hover > .other_article1_img {
+          opacity: 0;
+        }
+        &:hover > .other_article1_content {
+          opacity: 1;
+        }
+        .other_article1_img {
+          opacity: 1;
+          width: 100%;
+          height: 100%;
+          background: url(../assets/jordy.png) 50% no-repeat;
+          background-size: cover;
+          border-radius: 15px 0 0 0;
+          transition: all 0.5s linear 0s;
+        }
+        .other_article1_content {
+          opacity: 0;
+          position: absolute;
+          left: 50%;
+          top: 130px;
+          transform: translateX(-50%);
+          transition: all 0.5s linear 0s;
+          h5 {
+            font-size: 30px;
+          }
+          p {
+            font-size: 20px;
+          }
+        }
+      }
+      .other_article2 {
+        position: relative;
+        width: 50%;
+        height: 350px;
+        background-color: rgba(251, 251, 251, 0.7);
+        backdrop-filter: blur(4px);
+        cursor: pointer;
+        a {
+          color: black;
+        }
+        &:hover > a > .other_article2_img {
+          opacity: 0;
+        }
+        &:hover > a > .other_article2_content {
+          opacity: 1;
+        }
+        .other_article2_img {
+          position: absolute;
+          right: 0;
+          width: 100%;
+          height: 100%;
+          background: url(../assets/yangyangmockup.png) 50% no-repeat;
+          background-size: cover;
+          opacity: 1;
+          transition: all 0.5s linear 0s;
+        }
+        .other_article2_content {
+          position: absolute;
+          left: 40px;
+          bottom: 130px;
+          opacity: 0;
+          transition: all 0.5s linear 0s;
+          h5 {
+            font-size: 30px;
+          }
+          p {
+            font-size: 20px;
+          }
+        }
+      }
+      .other_article3 {
+        position: relative;
+        width: 25%;
+        height: 350px;
+        background-color: rgba(44, 44, 44, 0.7);
+        backdrop-filter: blur(4px);
+        border-radius: 0 15px 0 0;
+        cursor: pointer;
+        &:hover > .other_article3_img {
+          opacity: 0;
+        }
+        &:hover > .other_article3_content {
+          opacity: 1;
+        }
+        .other_article3_img {
+          width: 100%;
+          height: 100%;
+          background: url(../assets/lottieicons.png) 50% no-repeat;
+          background-size: cover;
+          opacity: 1;
+          transition: all 0.5s linear 0s;
+          border-radius: 0 15px 0 0;
+        }
+        .other_article3_content {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          top: 100px;
+          opacity: 0;
+          transition: all 0.5s linear 0s;
+          h5 {
+            font-size: 30px;
+            color: #fff;
+          }
+          p {
+            font-size: 20px;
+            color: #fff;
+          }
+        }
+      }
+      .other_article4 {
+        position: relative;
+        width: 100%;
+        height: 350px;
+        background-color: rgba(251, 251, 251, 0.7);
+        backdrop-filter: blur(4px);
+        border-radius: 0 0 15px 15px;
+        cursor: pointer;
+        a {
+          color: black;
+        }
+        &:hover > a > .other_article4_img {
+          opacity: 0;
+        }
+        &:hover > a > .other_article4_content {
+          opacity: 1;
+        }
+        .other_article4_img {
+          position: absolute;
+          right: 0;
+          width: 100%;
+          height: 100%;
+          background: url(../assets/artstationbanner.png) 50% no-repeat;
+          background-size: cover;
+          border-radius: 0 0 15px 15px;
+          opacity: 1;
+          transition: all 0.5s linear 0s;
+        }
+        .other_article4_content {
+          position: absolute;
+          left: 40px;
+          bottom: 100px;
+          opacity: 0;
+          transition: all 0.5s linear 0s;
+          h5 {
+            font-size: 30px;
+          }
+          p {
+            font-size: 20px;
+          }
         }
       }
     }

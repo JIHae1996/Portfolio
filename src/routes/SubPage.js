@@ -60,19 +60,19 @@ function SubPage() {
                           <li>
                             <h4>1.반응형 웹 제작</h4>
                             <p>
-                              <VscCircleFilled /> pc,tablet,mobile
+                              <VscCircleFilled className="VscCircleFilled" /> pc,tablet,mobile
                             </p>
                           </li>
                           <li>
                             <h4>2.웹 표준 준수</h4>
                             <p>
-                              <VscCircleFilled /> HTML/CSS WC 유효성 검사 Pass
+                              <VscCircleFilled className="VscCircleFilled" /> HTML/CSS WC 유효성 검사 Pass
                             </p>
                           </li>
                           <li>
                             <h4>3.주요기술</h4>
                             <p>
-                              <VscCircleFilled /> CSS animation 속성과 JS를 이용한 스크롤 animation,
+                              <VscCircleFilled className="VscCircleFilled" /> CSS animation 속성과 JS를 이용한 스크롤 animation,
                               <br />
                               마우스 Hover 인터렉션 등 구현.
                             </p>
@@ -95,12 +95,12 @@ function SubPage() {
                 <div className="sub_btn_1">
                   <button>
                     <a href="https://jihae96.github.io/NCSOFT/" target="_blank">
-                      Page <MdOpenInNew />
+                      Page <MdOpenInNew className="MdOpenInNew" />
                     </a>
                   </button>
                   <button>
                     <a href="https://github.com/jihae96/NCSOFT" target="_blank">
-                      Repository <MdOpenInNew />
+                      Repository <MdOpenInNew className="MdOpenInNew" />
                     </a>
                   </button>
                 </div>
@@ -132,19 +132,19 @@ function SubPage() {
                           <li>
                             <h4>1.반응형 웹 제작</h4>
                             <p>
-                              <VscCircleFilled /> pc,tablet,mobile
+                              <VscCircleFilled className="VscCircleFilled" /> pc,tablet,mobile
                             </p>
                           </li>
                           <li>
                             <h4>2.웹 표준 준수</h4>
                             <p>
-                              <VscCircleFilled /> HTML/CSS WC 유효성 검사 Pass
+                              <VscCircleFilled className="VscCircleFilled" /> HTML/CSS WC 유효성 검사 Pass
                             </p>
                           </li>
                           <li>
                             <h4>3.주요기술</h4>
                             <p>
-                              <VscCircleFilled /> CSS animation 속성과 JS를 이용한 스크롤 animation,
+                              <VscCircleFilled className="VscCircleFilled" /> CSS animation 속성과 JS를 이용한 스크롤 animation,
                               <br />
                               마우스 Hover 인터렉션 등 구현.
                             </p>
@@ -167,12 +167,12 @@ function SubPage() {
                 <div className="sub_btn_1">
                   <button>
                     <a href="https://jihae96.github.io/webProject02/" target="_blank">
-                      Page <MdOpenInNew />
+                      Page <MdOpenInNew className="MdOpenInNew" />
                     </a>
                   </button>
                   <button>
                     <a href="https://github.com/jihae96/webProject02" target="_blank">
-                      Repository <MdOpenInNew />
+                      Repository <MdOpenInNew className="MdOpenInNew" />
                     </a>
                   </button>
                 </div>
@@ -203,19 +203,19 @@ function SubPage() {
                           <li>
                             <h4>1.주요기술</h4>
                             <p>
-                              <VscCircleFilled /> firebase를 이용한 스토리지, 실시간 데이터 베이스 구현 및 로그인 기능
+                              <VscCircleFilled className="VscCircleFilled" /> firebase를 이용한 스토리지, 실시간 데이터 베이스 구현 및 로그인 기능
                             </p>
                             <p>
-                              <VscCircleFilled /> router를 이용한 페이지 정리화와 이동 기능
+                              <VscCircleFilled className="VscCircleFilled" /> router를 이용한 페이지 정리화와 이동 기능
                             </p>
                             <p>
-                              <VscCircleFilled /> scss를 이용한 css정리 구현
+                              <VscCircleFilled className="VscCircleFilled" /> scss를 이용한 css정리 구현
                             </p>
                             <p>
-                              <VscCircleFilled /> React-icons를 이용한 아이콘 연결
+                              <VscCircleFilled className="VscCircleFilled" /> React-icons를 이용한 아이콘 연결
                             </p>
                             <p>
-                              <VscCircleFilled /> props를 통해 컴포넌트에게 값 전달하기
+                              <VscCircleFilled className="VscCircleFilled" /> props를 통해 컴포넌트에게 값 전달하기
                             </p>
                           </li>
                         </ul>
@@ -236,12 +236,12 @@ function SubPage() {
                 <div className="sub_btn_1">
                   <button>
                     <a href="https://jihae96.github.io/kakao_app/" target="_blank">
-                      Page <MdOpenInNew />
+                      Page <MdOpenInNew className="MdOpenInNew" />
                     </a>
                   </button>
                   <button>
                     <a href="https://github.com/jihae96/kakao_app" target="_blank">
-                      Repository <MdOpenInNew />
+                      Repository <MdOpenInNew className="MdOpenInNew" />
                     </a>
                   </button>
                   {/* 뜨는 팝업페이지가 모바일 크기로 지정해야함 */}
@@ -273,25 +273,25 @@ function SubPage() {
                           <li>
                             <h4>1.반응형 웹 제작</h4>
                             <p>
-                              <VscCircleFilled /> pc,tablet,mobile
+                              <VscCircleFilled className="VscCircleFilled" /> pc,tablet,mobile
                             </p>
                           </li>
                           <li>
                             <h4>3.주요기술</h4>
                             <p>
-                              <VscCircleFilled /> firebase를 이용한 스토리지 구현 및 로그인 기능
+                              <VscCircleFilled className="VscCircleFilled" /> firebase를 이용한 스토리지 구현 및 로그인 기능
                             </p>
                             <p>
-                              <VscCircleFilled /> router를 이용한 페이지 정리화와 이동 기능
+                              <VscCircleFilled className="VscCircleFilled" /> router를 이용한 페이지 정리화와 이동 기능
                             </p>
                             <p>
-                              <VscCircleFilled /> Swiper Slid 구현
+                              <VscCircleFilled className="VscCircleFilled" /> Swiper Slid 구현
                             </p>
                             <p>
-                              <VscCircleFilled /> 외부 데이터를 props를 통해 컴포넌트에게 값 전달하기
+                              <VscCircleFilled className="VscCircleFilled" /> 외부 데이터를 props를 통해 컴포넌트에게 값 전달하기
                             </p>
                             <p>
-                              <VscCircleFilled /> Modal창을 이용한 팝업창 구현
+                              <VscCircleFilled className="VscCircleFilled" /> Modal창을 이용한 팝업창 구현
                             </p>
                           </li>
                         </ul>
@@ -312,12 +312,12 @@ function SubPage() {
                 <div className="sub_btn_1">
                   <button>
                     <a href="https://jihae96.github.io/netflix_app/" target="_blank">
-                      Page <MdOpenInNew />
+                      Page <MdOpenInNew className="MdOpenInNew" />
                     </a>
                   </button>
                   <button>
                     <a href="https://github.com/jihae96/netflix_app" target="_blank">
-                      Repository <MdOpenInNew />
+                      Repository <MdOpenInNew className="MdOpenInNew" />
                     </a>
                   </button>
                   {/* 뜨는 팝업페이지가 모바일 크기로 지정해야함 */}
@@ -349,10 +349,10 @@ function SubPage() {
                           <li>
                             <h4>1.주요기술</h4>
                             <p>
-                              <VscCircleFilled /> React를 이용한 로그인 및 페이지 구현, 마우스 Hover 인터렉션 등 구현.
+                              <VscCircleFilled className="VscCircleFilled" /> React를 이용한 로그인 및 페이지 구현, 마우스 Hover 인터렉션 등 구현.
                             </p>
                             <p>
-                              <VscCircleFilled /> props 를 통해 컴포넌트에게 값 전달하기
+                              <VscCircleFilled className="VscCircleFilled" /> props 를 통해 컴포넌트에게 값 전달하기
                             </p>
                           </li>
                         </ul>
@@ -373,22 +373,22 @@ function SubPage() {
                 <div className="sub_btn_1">
                   <button>
                     <a href="https://jihae96.github.io/portfolio_forest/" target="_blank">
-                      Page <MdOpenInNew />
+                      Page <MdOpenInNew className="MdOpenInNew" />
                     </a>
                   </button>
                   <button>
                     <a href="https://github.com/jihae96/portfolio_forest" target="_blank">
-                      Repository <MdOpenInNew />
+                      Repository <MdOpenInNew className="MdOpenInNew" />
                     </a>
                   </button>
                   <button>
-                    <a href="../assets/forest.pdf" download>
-                      기획파일 <MdOpenInNew />
+                    <a href="https://drive.google.com/drive/u/0/folders/1kNbsJDTcfzt-8mN7mxS3QXRRLLUp-Bv1" download>
+                      기획파일 <MdOpenInNew className="MdOpenInNew" />
                     </a>
                   </button>
                   <button>
                     <a href="https://www.behance.net/gallery/156630789/forest" target="_blank">
-                      behance <MdOpenInNew />
+                      behance <MdOpenInNew className="MdOpenInNew" />
                     </a>
                   </button>
                 </div>

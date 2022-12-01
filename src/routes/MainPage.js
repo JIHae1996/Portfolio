@@ -14,6 +14,7 @@ import OtherPage from './OtherPage'
 import SubPage from './SubPage'
 
 import { motion } from 'framer-motion'
+import SubBg from '../components/SubBg'
 
 const DIVIDER_HEIGHT = 5
 
@@ -157,14 +158,6 @@ function MainPage() {
                     전반적인 레이아웃 수정 및 도록 간지 담당
                   </em>
                 </p>
-                {/* <div className="profile_1_button">
-                  <button>
-                    졸업작품 <MdOpenInNew />
-                  </button>
-                  <button>
-                    도록팀 최종본 <MdOpenInNew />
-                  </button>
-                </div> */}
               </div>
               <div className="profile_1_2">
                 <p>
@@ -294,22 +287,6 @@ function MainPage() {
           </div>
         </section>
       </div>
-      {/* <aside>
-        <ul id="quick" className="main_quick">
-          <li>
-            <a onClick={scrollTo} href="#"></a>
-          </li>
-          <li>
-            <a onClick={scrollTo} href="#"></a>
-          </li>
-          <li>
-            <a onClick={scrollTo} href="#"></a>
-          </li>
-          <li>
-            <a onClick={scrollTo} href="#"></a>
-          </li>
-        </ul>
-      </aside> */}
     </>
   )
 }

@@ -46,7 +46,7 @@ function Swarm({ count, ...props }) {
   return (
     <instancedMesh ref={mesh} args={[null, null, count]} castShadow receiveShadow {...props}>
       <sphereBufferGeometry args={[1, 32, 32]} />
-      <meshStandardMaterial roughness={0} color="#f0f0f0" />
+      <meshStandardMaterial roughness={0} color="#c2c2c2" />
     </instancedMesh>
   )
 }
@@ -54,15 +54,15 @@ function Swarm({ count, ...props }) {
 export default function Dot() {
   return (
     <Canvas shadows gl={{ alpha: false, antialias: false }} camera={{ fov: 75, position: [0, 0, 60], near: 10, far: 150 }}>
-      <color attach="background" args={['#f0f0f0']} />
-      <fog attach="fog" args={['#f0f0f0', 60, 100]} />
+      <color attach="background" args={['#f7f7f7']} />
+      <fog attach="fog" args={['#fefefe', 60, 100]} />
       <ambientLight intensity={1.5} />
       <pointLight position={[100, 10, -50]} intensity={20} castShadow />
       <pointLight position={[-100, -100, -100]} intensity={10} color="#f0f0f0" />
       <Swarm count={150} position={[0, 10, 0]} />
       <ContactShadows rotation={[Math.PI / 2, 0, 0]} position={[0, -30, 0]} opacity={0.6} width={130} height={130} blur={1} far={40} />
       <EffectComposer multisampling={0}>
-        <SSAO samples={31} radius={10} intensity={30} luminanceInfluence={0.1} color="#f0f0f0" />
+        <SSAO samples={31} radius={10} intensity={30} luminanceInfluence={0.1} color="#c2c2c2" />
       </EffectComposer>
       <Suspense fallback={null}>
         <Environment preset="city" />

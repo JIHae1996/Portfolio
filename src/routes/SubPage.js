@@ -20,6 +20,7 @@ import 'swiper/css/pagination'
 import 'swiper/css/scrollbar'
 
 import { VscCircleFilled } from 'react-icons/vsc'
+import SubBg from '../components/SubBg'
 
 function SubPage() {
   return (
@@ -391,6 +392,9 @@ function SubPage() {
           </SwiperSlide>
         </div>
       </Swiper>
+      <div className="sub__bg">
+        <SubBg className="sub__bg" />
+      </div>
     </>
   )
 }

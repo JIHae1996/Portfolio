@@ -38,6 +38,7 @@ function Modal02({ setModalOpen }) {
           <ul className="List">
             <li onMouseOver={startPlay} onMouseLeave={stopPlay}>
               <Lottie
+                className="Lottieicon"
                 mode={'bounce'}
                 speed={2}
                 play={play}
@@ -48,6 +49,7 @@ function Modal02({ setModalOpen }) {
             </li>
             <li onMouseOver={startPlay} onMouseLeave={stopPlay}>
               <Lottie
+                className="Lottieicon"
                 mode={'bounce'}
                 speed={2}
                 play={play}
@@ -58,6 +60,7 @@ function Modal02({ setModalOpen }) {
             </li>
             <li>
               <Lottie
+                className="Lottieicon"
                 mode={'bounce'}
                 speed={2}
                 play={play}
@@ -68,6 +71,7 @@ function Modal02({ setModalOpen }) {
             </li>
             <li>
               <Lottie
+                className="Lottieicon"
                 mode={'bounce'}
                 speed={2}
                 play={play}

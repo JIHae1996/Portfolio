@@ -11,6 +11,7 @@
     height: 100%;
     padding: 100px 0;
     border-radius: 15px;
+    cursor: url(../assets/Group23.svg), auto;
     .other_content {
       width: 90%;
       height: 90%;
@@ -25,7 +26,6 @@
         border-radius: 15px 15px 0 0;
         backdrop-filter: blur(4px);
         transition: all 0.5s linear 0s;
-        cursor: pointer;
         &:hover > .other_article1_img {
           opacity: 0;
         }
@@ -63,7 +63,6 @@
         height: 180px;
         background-color: rgba(251, 251, 251, 0.7);
         backdrop-filter: blur(4px);
-        cursor: pointer;
         a {
           color: black;
         }
@@ -104,7 +103,6 @@
         height: 180px;
         background-color: rgba(44, 44, 44, 0.7);
         backdrop-filter: blur(4px);
-        cursor: pointer;
         &:hover > .other_article3_img {
           opacity: 0;
         }
@@ -143,7 +141,6 @@
         background-color: rgba(251, 251, 251, 0.7);
         backdrop-filter: blur(4px);
         border-radius: 0 0 15px 15px;
-        cursor: pointer;
         a {
           color: black;
         }
@@ -195,6 +192,7 @@
     height: 100%;
     padding: 150px 0;
     border-radius: 15px;
+    cursor: url(../assets/Group23.svg), auto;
     .other_content {
       width: 80%;
       margin: 0 auto;
@@ -208,7 +206,6 @@
         border-radius: 15px 15px 0 0;
         backdrop-filter: blur(4px);
         transition: all 0.5s linear 0s;
-        cursor: pointer;
         &:hover > .other_article1_img {
           opacity: 0;
         }
@@ -245,7 +242,6 @@
         height: 350px;
         background-color: rgba(251, 251, 251, 0.7);
         backdrop-filter: blur(4px);
-        cursor: pointer;
         a {
           color: black;
         }
@@ -289,7 +285,6 @@
         background-color: rgba(44, 44, 44, 0.7);
         backdrop-filter: blur(4px);
         border-radius: 0 0 0 15px;
-        cursor: pointer;
         &:hover > .other_article3_img {
           opacity: 0;
         }
@@ -329,7 +324,6 @@
         background-color: rgba(251, 251, 251, 0.7);
         backdrop-filter: blur(4px);
         border-radius: 0 0 0 15px;
-        cursor: pointer;
         a {
           color: black;
         }
@@ -394,7 +388,7 @@
         border-radius: 15px 15px 0 0;
         backdrop-filter: blur(4px);
         transition: all 0.5s linear 0s;
-        cursor: pointer;
+        cursor: url(../assets/Group23.svg), auto;
         &:hover > .other_article1_img {
           opacity: 0;
         }
@@ -431,7 +425,6 @@
         height: 350px;
         background-color: rgba(251, 251, 251, 0.7);
         backdrop-filter: blur(4px);
-        cursor: pointer;
         a {
           color: black;
         }
@@ -442,6 +435,7 @@
           opacity: 1;
         }
         .other_article2_img {
+          cursor: url(../assets/Group23.svg), auto;
           position: absolute;
           right: 0;
           width: 100%;
@@ -472,7 +466,7 @@
         background-color: rgba(44, 44, 44, 0.7);
         backdrop-filter: blur(4px);
         border-radius: 0 15px 0 0;
-        cursor: pointer;
+        cursor: url(../assets/Group23.svg), auto;
         &:hover > .other_article3_img {
           opacity: 0;
         }
@@ -512,7 +506,6 @@
         background-color: rgba(251, 251, 251, 0.7);
         backdrop-filter: blur(4px);
         border-radius: 0 0 15px 15px;
-        cursor: pointer;
         a {
           color: black;
         }
@@ -532,6 +525,7 @@
           border-radius: 0 0 15px 15px;
           opacity: 1;
           transition: all 0.5s linear 0s;
+          cursor: url(../assets/Group23.svg), auto;
         }
         .other_article4_content {
           position: absolute;

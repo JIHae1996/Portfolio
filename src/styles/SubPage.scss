@@ -401,14 +401,15 @@
     overflow-x: scroll;
     scroll-behavior: smooth;
     height: 100vh;
+    width: 100vw;
     .swiper-button-prev {
-      left: 70px !important;
-      top: 80%;
+      left: 78% !important;
+      top: 18%;
       color: #000000 !important;
     }
     .swiper-button-next {
-      left: 40% !important;
-      top: 80%;
+      right: 10% !important;
+      top: 18%;
       color: #000000 !important;
     }
     .swiper-horizontal > .swiper-pagination-bullets,
@@ -421,6 +422,22 @@
       position: relative;
       width: 100% !important;
       height: 100vh !important;
+      .Subpage_modal_btn {
+        position: absolute;
+        z-index: 1000;
+        left: 41%;
+        top: 400px;
+        border: 2px solid #000;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        p {
+          font-size: 15px;
+          text-align: center;
+          position: relative;
+          top: 25px;
+        }
+      }
       article {
         position: absolute;
         top: -50px;
@@ -466,36 +483,60 @@
           z-index: 1;
           position: absolute;
           width: 650px;
-          height: 330px;
+          height: 320px;
           left: 74px;
           top: 400px;
-
           border: 14px solid rgb(0, 0, 0);
           backdrop-filter: blur(2px);
           /* Note: backdrop-filter has minimal browser support */
           border-radius: 43px;
-
           overflow: hidden;
           video {
+            position: absolute;
+            left: 50%;
+            top: -5px;
+            transform: translateX(-50%);
             width: 100%;
           }
         }
         .sub_video2 {
           box-sizing: border-box;
-
           position: absolute;
-          width: 300px;
-          height: 571px;
+          width: 310px;
+          height: 560px;
           left: 284px;
           top: 366px;
           backdrop-filter: blur(2px);
           /* Note: backdrop-filter has minimal browser support */
-          border: 14px solid rgb(0, 0, 0);
-
+          border: 15px solid rgb(0, 0, 0);
           overflow: hidden;
-          border-radius: 43px;
+          border-radius: 40px;
           video {
-            width: 100%;
+            position: absolute;
+            left: 50%;
+            top: -10px;
+            transform: translateX(-50%);
+            width: 105%;
+          }
+        }
+        .sub_video3 {
+          box-sizing: border-box;
+          position: absolute;
+          width: 310px;
+          height: 560px;
+          left: 284px;
+          top: 366px;
+          backdrop-filter: blur(2px);
+          /* Note: backdrop-filter has minimal browser support */
+          border: 15px solid rgb(0, 0, 0);
+          overflow: hidden;
+          border-radius: 40px;
+          video {
+            position: absolute;
+            left: 50%;
+            top: -15px;
+            transform: translateX(-50%);
+            width: 110%;
           }
         }
 
@@ -535,7 +576,7 @@
             display: flex;
             flex-direction: row;
             padding: 0;
-            margin: 10px 0 40px;
+            margin: 10px 0 20px;
             li {
               padding: 12px;
               font-size: 10px;
@@ -547,17 +588,18 @@
           }
           .sub_cont {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             justify-content: space-between;
-            align-items: center;
             padding: 0;
             .sub_cont_title {
+              text-align: left;
               font-size: 20px;
               font-weight: 700;
+              margin-bottom: 10px;
             }
             .sub_cont_text {
               font-size: 12px;
-              line-height: 300%;
+              line-height: 200%;
               li > h4 {
                 font-weight: 700;
               }
@@ -623,4 +665,16 @@
   top: 0;
   left: 0;
   z-index: -2;
+}
+.Lottieicon_swipe {
+  z-index: 1000;
+  position: fixed;
+  top: 17%;
+  right: 11%;
+}
+.Lottieicon_swipe_text {
+  z-index: 1000;
+  position: fixed;
+  top: 15%;
+  right: 15%;
 }

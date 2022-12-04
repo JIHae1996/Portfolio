@@ -4,17 +4,15 @@ import Canvas from '../components/Canvas'
 import Dots from '../components/Dot'
 import Title from '../components/Title'
 import Circle from '../components/Circle'
+import Lottie from 'lottie-react'
 
-import ToolIcon from '../assets/ToolIcon.svg'
-import DevelopmentTools from '../assets/DevelopmentTools.svg'
-import DesignTools from '../assets/DesignTools.svg'
-
-import { MdOpenInNew, MdArrowRightAlt } from 'react-icons/md'
+import { MdArrowRightAlt } from 'react-icons/md'
 import OtherPage from './OtherPage'
 import SubPage from './SubPage'
+import Contect from './Contect'
 
 import { motion } from 'framer-motion'
-import SubBg from '../components/SubBg'
+import scroll from '../assets/scroll_down.json'
 
 const DIVIDER_HEIGHT = 5
 
@@ -72,6 +70,18 @@ function MainPage() {
           setShow02(false)
           setShow03(true)
           setScrollIndex(3)
+        } else if (scrollTop >= pageHeight && scrollTop < pageHeight * 4) {
+          //현재 4페이지
+          console.log('현재 3페이지, down')
+          outerDivRef.current.scrollTo({
+            top: pageHeight * 4 + DIVIDER_HEIGHT * 4,
+            left: 0,
+            behavior: 'smooth'
+          })
+          setShow01(false)
+          setShow02(false)
+          setShow03(false)
+          setScrollIndex(4)
         }
       } else {
         // 스크롤 올릴 때
@@ -108,6 +118,18 @@ function MainPage() {
           setShow02(true)
           setShow03(false)
           setScrollIndex(4)
+        } else if (scrollTop >= pageHeight && scrollTop < pageHeight * 5) {
+          //현재 3페이지
+          console.log('현재 3페이지, up')
+          outerDivRef.current.scrollTo({
+            top: pageHeight * 3 + DIVIDER_HEIGHT * 3,
+            left: 0,
+            behavior: 'smooth'
+          })
+          setShow01(false)
+          setShow02(false)
+          setShow03(false)
+          setScrollIndex(5)
         }
       }
     }
@@ -131,9 +153,20 @@ function MainPage() {
             <br />
             <span>이지해 입니다</span>
           </p>
+          <Lottie
+            className="Lottieicon_scroll"
+            mode={'bounce'}
+            speed={2}
+            loop
+            style={{ display: 'block', width: 50, fontSize: '16', margin: '0 auto', marginBottom: '4px' }}
+            animationData={scroll}
+          />
+          <p className="scroll_down">Scroll Down</p>
           <Dots />
         </section>
         <section className={`main__main2 ${show01 && 'main__main2_on'}`}>
+          <h3 className="main2_h3">Hello, my name is JiHae Lee.</h3>
+          <p className="subtitle">Welcome to my web-page!</p>
           <div className="main_content2">
             <div className="profile_1">
               <motion.h3
@@ -166,9 +199,53 @@ function MainPage() {
                 <p>UI/UX 웹&amp;앱 디자인 &amp; 프론트엔드(React.js)_B 수강중</p>
               </div>
               <div className="profile_1_3">
-                <img src={ToolIcon} alt="logo" />
-                <img src={DevelopmentTools} alt="logo" />
-                <img src={DesignTools} alt="logo" />
+                <ul>
+                  <li className="group01">
+                    <div className="skill_icon01">
+                      <p>React</p>
+                    </div>
+                    <div className="skill_icon02">
+                      <p>HTML5</p>
+                    </div>
+                    <div className="skill_icon03">
+                      <p>CSS3</p>
+                    </div>
+                    <div className="skill_icon04">
+                      <p>Javascript</p>
+                    </div>
+                    <div className="skill_icon05">
+                      <p>Sass</p>
+                    </div>
+                  </li>
+                  <li className="group02">
+                    <div className="skill_icon06">
+                      <p>Photoshop</p>
+                    </div>
+                    <div className="skill_icon07">
+                      <p>Illustrator</p>
+                    </div>
+                    <div className="skill_icon08">
+                      <p>InDesign</p>
+                    </div>
+                    <div className="skill_icon09">
+                      <p>AfterEffects</p>
+                    </div>
+                    <div className="skill_icon10">
+                      <p>Premiere</p>
+                    </div>
+                    <div className="skill_icon11">
+                      <p>XD</p>
+                    </div>
+                  </li>
+                  <li className="group03">
+                    <div className="skill_icon12">
+                      <p>Figma</p>
+                    </div>
+                    <div className="skill_icon13">
+                      <p>Clipstudio</p>
+                    </div>
+                  </li>
+                </ul>
               </div>
             </div>
             <div className="profile_line"></div>
@@ -284,6 +361,11 @@ function MainPage() {
         <section className={`other_main ${show03 && 'other_main_on'}`}>
           <div>
             <OtherPage />
+          </div>
+        </section>
+        <section className={`contect_main ${show03 && 'contect_main_on'}`}>
+          <div>
+            <Contect />
           </div>
         </section>
       </div>

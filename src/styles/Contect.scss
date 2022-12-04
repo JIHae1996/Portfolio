@@ -1,0 +1,78 @@
+.contect_main {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  .contect_h2 {
+    z-index: 100;
+    position: absolute;
+    font-size: 35px;
+    top: 550px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .contect_email {
+    position: absolute;
+    left: 49%;
+    top: 68%;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border-radius: 10px;
+    padding: 5px 20px;
+    transform: translateX(-50%);
+    .email_icon {
+      font-size: 25px;
+      position: relative;
+      top: 5px;
+      padding-right: 10px;
+    }
+  }
+  .contect_sns {
+    .sns_ul {
+      display: flex;
+      position: absolute;
+      bottom: 15%;
+      left: 49.5%;
+      transform: translateX(-50%);
+      li {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 40px;
+        color: rgba(0, 0, 0, 0.5);
+        transition: all 0.2s linear 0s;
+        &:hover,
+        &:hover > .Footer_a {
+          color: rgba(0, 0, 0, 1);
+        }
+        .Footer_icon {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          text-align: center;
+          font-size: 40px;
+        }
+        .Footer_a {
+          position: relative;
+          margin-top: 80px;
+          font-size: 20px;
+          transition: all 0.2s linear 0s;
+          color: rgba(0, 0, 0, 0.5);
+        }
+      }
+    }
+  }
+  .Lottieicon_contect {
+    position: absolute;
+    top: 90px;
+    left: 49.5%;
+    transform: translateX(-50%);
+  }
+  .copyright {
+    position: absolute;
+    left: 49%;
+    bottom: 2%;
+    transform: translateX(-50%);
+  }
+}

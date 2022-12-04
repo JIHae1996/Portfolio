@@ -1,10 +1,10 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom'
 import Nav from './components/Nav'
-import Footer from './components/Footer'
 import MainPage from './routes/MainPage'
 import OtherPage from './routes/OtherPage'
 import SubPage from './routes/SubPage'
+import Contect from './routes/Contect'
 
 function Router() {
   const Layout = () => {
@@ -12,7 +12,6 @@ function Router() {
       <div>
         <Nav />
         <Outlet />
-        <Footer />
       </div>
     )
   }
@@ -24,6 +23,7 @@ function Router() {
           <Route index element={<MainPage />} />
           <Route index element={<SubPage />} />
           <Route index element={<OtherPage />} />
+          <Route index element={<Contect />} />
         </Route>
       </Routes>
     </BrowserRouter>

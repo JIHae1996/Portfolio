@@ -39,7 +39,7 @@ function OtherPage() {
           </div>
 
           <div className="other_article2">
-            <a href="https://notefolio.net/jihae_96/258472">
+            <a onClick={() => window.open('https://notefolio.net/jihae_96/258472', '_blank')}>
               <div className="other_article2_img"></div>
               <div className="other_article2_content">
                 <h5>
@@ -69,7 +69,7 @@ function OtherPage() {
           </div>
 
           <div className="other_article4">
-            <a href="https://www.artstation.com/gaon_96">
+            <a onClick={() => window.open('https://www.artstation.com/gaon_96', '_blank')}>
               <div className="other_article4_img"></div>
               <div className="other_article4_content">
                 <h5>

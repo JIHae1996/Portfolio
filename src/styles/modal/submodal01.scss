@@ -1,0 +1,61 @@
+.SubModal {
+  z-index: 10000 !important;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(3px);
+  .modal-close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: #fff;
+  }
+  .SubModal_container {
+    z-index: 10000 !important;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 70%;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 20px;
+    display: flex;
+    .SubModal_container01 {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 50px;
+      width: 700px;
+      height: 200px;
+      border-radius: 20px;
+      background-color: black;
+      background: url(../../assets/css01.PNG) 50% no-repeat;
+      background-size: cover;
+    }
+    .SubModal_container02 {
+      position: absolute;
+      left: 26%;
+      transform: translateX(-50%);
+      top: 270px;
+      width: 250px;
+      height: 350px;
+      border-radius: 20px;
+      background-color: black;
+      background: url(../../assets/html01.png) 50% no-repeat;
+      background-size: cover;
+    }
+    .SubModal_container03 {
+      position: absolute;
+      left: 55%;
+      transform: translateX(-50%);
+      top: 270px;
+      width: 250px;
+      height: 350px;
+      border-radius: 20px;
+      background-color: black;
+      background: url(../../assets/WC01.png) 50% no-repeat;
+      background-size: cover;
+    }
+  }
+}

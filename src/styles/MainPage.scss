@@ -29,6 +29,21 @@
           opacity: 1;
         }
       }
+      .Lottieicon_scroll {
+        z-index: 100;
+        position: absolute;
+        bottom: 6%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .scroll_down {
+        z-index: 100;
+        position: absolute;
+        bottom: 19%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 13px;
+      }
       .main_content1 {
         opacity: 1;
         z-index: 100;
@@ -52,14 +67,6 @@
         text-align: center;
         width: 100%;
         animation: main_cont1_text_ani 1s linear forwards 0s;
-        @keyframes main_cont1_text_ani {
-          0% {
-            bottom: 0%;
-          }
-          100% {
-            bottom: 30% !important;
-          }
-        }
       }
     }
     .main__main2_on {
@@ -415,6 +422,21 @@
       overflow: hidden;
       opacity: 0;
       animation: ani01 1s linear forwards 0s;
+      .Lottieicon_scroll {
+        z-index: 100;
+        position: absolute;
+        bottom: 6%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .scroll_down {
+        z-index: 100;
+        position: absolute;
+        bottom: 19%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 13px;
+      }
       @keyframes ani01 {
         0% {
           opacity: 0;
@@ -780,6 +802,11 @@
   body {
     cursor: url('../assets/cusur.svg'), auto;
   }
+  :root {
+    --typewriter-speed: 3s;
+    --typewriter-characters: 23;
+    --bg-color: #f0f0f0;
+  }
   .main_container {
     &::-webkit-scrollbar {
       display: none;
@@ -804,6 +831,21 @@
           opacity: 1;
         }
       }
+      .Lottieicon_scroll {
+        z-index: 100;
+        position: absolute;
+        bottom: 6%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .scroll_down {
+        z-index: 100;
+        position: absolute;
+        bottom: 19%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 13px;
+      }
       .main_content1 {
         opacity: 1;
         z-index: 100;
@@ -819,21 +861,13 @@
         z-index: 1000;
         position: absolute;
         left: 50%;
-        bottom: 30%;
+        bottom: 35%;
         transform: translateX(-50%);
         font-weight: 400;
         font-size: 25px;
         line-height: 150%;
         text-align: center;
         animation: main_cont1_text_ani 1s linear forwards 0s;
-        @keyframes main_cont1_text_ani {
-          0% {
-            bottom: 0%;
-          }
-          100% {
-            bottom: 30% !important;
-          }
-        }
       }
     }
     .main__main2_on {
@@ -841,7 +875,58 @@
       width: 100%;
       height: 100vh;
       overflow: hidden;
-      animation: ani04 0.5s linear 0.1s forwards;
+      .main2_h3 {
+        font-size: clamp(1rem, 3vw + 1rem, 4rem);
+        position: absolute;
+        top: 120px;
+        left: 10%;
+        font-weight: 100;
+      }
+      .main2_h3::after,
+      .main2_h3::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+      }
+      .main2_h3::before {
+        background: var(--bg-color);
+        animation: typewriter var(--typewriter-speed) 1s steps(var(--typewriter-characters)) forwards;
+      }
+      .main2_h3::after {
+        width: 0.08em;
+        background-color: black;
+        animation: typewriter var(--typewriter-speed) steps(var(--typewriter-characters)) 1s forwards, blink 750ms steps(var(--typewriter-characters)) infinite;
+      }
+      @keyframes typewriter {
+        to {
+          left: 100%;
+        }
+      }
+      @keyframes blink {
+        to {
+          background: transparent;
+        }
+      }
+      .subtitle {
+        z-index: 100;
+        position: absolute;
+        top: 240px;
+        left: 10%;
+        font-size: 30px;
+        opacity: 0;
+        font-weight: 200;
+        transform: translateY(3rem);
+        animation: fade-in-up 2s ease 4s forwards;
+      }
+      @keyframes fade-in-up {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
       .main_content2 {
         opacity: 1;
         width: 80%;
@@ -852,7 +937,8 @@
         transform: translateX(-50%);
         padding: 20px;
         display: flex;
-        animation: ani05 0.5s linear 0.2s forwards;
+        opacity: 0;
+        animation: ani05 0.5s linear 5s forwards;
         .profile_1 {
           margin-right: 80px;
           h3 {
@@ -889,11 +975,110 @@
             }
           }
           .profile_1_3 {
-            margin-top: 45px;
-            img {
-              display: block;
-              height: 35px;
-              margin-top: 10px;
+            ul {
+              display: flex;
+              flex-direction: column;
+              li > div {
+                padding-right: 7px;
+                p {
+                  position: relative;
+                  text-align: center;
+                  top: 50px;
+                  left: 4px;
+                  font-size: 8px;
+                }
+              }
+              .group01 {
+                display: flex;
+                .skill_icon01 {
+                  width: 50px;
+                  height: 50px;
+                  background: url(../assets/react.svg) 50% no-repeat;
+                  background-size: cover;
+                }
+                .skill_icon02 {
+                  width: 50px;
+                  height: 50px;
+                  background: url(../assets/HTML5.png) 50% no-repeat;
+                  background-size: 90%;
+                }
+                .skill_icon03 {
+                  width: 50px;
+                  height: 50px;
+                  background: url(../assets/CSS3.png) 50% no-repeat;
+                  background-size: 65%;
+                }
+                .skill_icon04 {
+                  width: 50px;
+                  height: 50px;
+                  background: url(../assets/JavaScript.png) 50% no-repeat;
+                  background-size: 75%;
+                }
+                .skill_icon05 {
+                  width: 50px;
+                  height: 50px;
+                  background: url(../assets/Sass.png) 50% no-repeat;
+                  background-size: 80%;
+                }
+              }
+              .group02 {
+                display: flex;
+                position: relative;
+                top: 30px;
+                .skill_icon06 {
+                  width: 50px;
+                  height: 50px;
+                  background: url(../assets/Adobe_Photoshop.png) 50% no-repeat;
+                  background-size: 70%;
+                }
+                .skill_icon07 {
+                  width: 50px;
+                  height: 50px;
+                  background: url(../assets/Adobe_Illustrator.png) 50% no-repeat;
+                  background-size: 70%;
+                }
+                .skill_icon08 {
+                  width: 50px;
+                  height: 50px;
+                  background: url(../assets/Adobe_InDesign.png) 50% no-repeat;
+                  background-size: 70%;
+                }
+                .skill_icon09 {
+                  width: 50px;
+                  height: 50px;
+                  background: url(../assets/Adobe_After_Effects.png) 50% no-repeat;
+                  background-size: 70%;
+                }
+                .skill_icon10 {
+                  width: 50px;
+                  height: 50px;
+                  background: url(../assets/Adobe_Premiere.png) 50% no-repeat;
+                  background-size: 70%;
+                }
+                .skill_icon11 {
+                  width: 50px;
+                  height: 50px;
+                  background: url(../assets/Adobe_XD.png) 50% no-repeat;
+                  background-size: 70%;
+                }
+              }
+              .group03 {
+                display: flex;
+                position: relative;
+                top: 55px;
+                .skill_icon12 {
+                  width: 50px;
+                  height: 50px;
+                  background: url(../assets/Figma.png) 50% no-repeat;
+                  background-size: 50%;
+                }
+                .skill_icon13 {
+                  width: 50px;
+                  height: 50px;
+                  background: url(../assets/Clip_studio.png) 50% no-repeat;
+                  background-size: 70%;
+                }
+              }
             }
           }
         }
@@ -963,6 +1148,23 @@
       width: 100%;
       height: 100vh;
       overflow: hidden;
+      .main2_h3 {
+        font-size: clamp(1rem, 3vw + 1rem, 4rem);
+        position: absolute;
+        top: 120px;
+        left: 10%;
+        font-weight: 100;
+      }
+      .subtitle {
+        z-index: 100;
+        position: absolute;
+        top: 240px;
+        left: 10%;
+        font-size: 30px;
+        opacity: 0;
+        font-weight: 200;
+        transform: translateY(3rem);
+      }
       .main_content2 {
         opacity: 1;
         width: 80%;
@@ -973,6 +1175,7 @@
         transform: translateX(-50%);
         padding: 20px;
         display: flex;
+        opacity: 0;
         .profile_1 {
           margin-right: 80px;
           h3 {
@@ -1010,10 +1213,110 @@
           }
           .profile_1_3 {
             margin-top: 45px;
-            img {
-              display: block;
-              height: 35px;
-              margin-top: 10px;
+            ul {
+              display: flex;
+              flex-direction: column;
+              li > div {
+                padding-right: 7px;
+                p {
+                  position: relative;
+                  text-align: center;
+                  top: 50px;
+                  left: 4px;
+                  font-size: 8px;
+                }
+              }
+              .group01 {
+                display: flex;
+                .skill_icon01 {
+                  width: 50px;
+                  height: 50px;
+                  background: url(../assets/react.svg) 50% no-repeat;
+                  background-size: cover;
+                }
+                .skill_icon02 {
+                  width: 50px;
+                  height: 50px;
+                  background: url(../assets/HTML5.png) 50% no-repeat;
+                  background-size: 90%;
+                }
+                .skill_icon03 {
+                  width: 50px;
+                  height: 50px;
+                  background: url(../assets/CSS3.png) 50% no-repeat;
+                  background-size: 65%;
+                }
+                .skill_icon04 {
+                  width: 50px;
+                  height: 50px;
+                  background: url(../assets/JavaScript.png) 50% no-repeat;
+                  background-size: 75%;
+                }
+                .skill_icon05 {
+                  width: 50px;
+                  height: 50px;
+                  background: url(../assets/Sass.png) 50% no-repeat;
+                  background-size: 80%;
+                }
+              }
+              .group02 {
+                display: flex;
+                position: relative;
+                top: 30px;
+                .skill_icon06 {
+                  width: 50px;
+                  height: 50px;
+                  background: url(../assets/Adobe_Photoshop.png) 50% no-repeat;
+                  background-size: 70%;
+                }
+                .skill_icon07 {
+                  width: 50px;
+                  height: 50px;
+                  background: url(../assets/Adobe_Illustrator.png) 50% no-repeat;
+                  background-size: 70%;
+                }
+                .skill_icon08 {
+                  width: 50px;
+                  height: 50px;
+                  background: url(../assets/Adobe_InDesign.png) 50% no-repeat;
+                  background-size: 70%;
+                }
+                .skill_icon09 {
+                  width: 50px;
+                  height: 50px;
+                  background: url(../assets/Adobe_After_Effects.png) 50% no-repeat;
+                  background-size: 70%;
+                }
+                .skill_icon10 {
+                  width: 50px;
+                  height: 50px;
+                  background: url(../assets/Adobe_Premiere.png) 50% no-repeat;
+                  background-size: 70%;
+                }
+                .skill_icon11 {
+                  width: 50px;
+                  height: 50px;
+                  background: url(../assets/Adobe_XD.png) 50% no-repeat;
+                  background-size: 70%;
+                }
+              }
+              .group03 {
+                display: flex;
+                position: relative;
+                top: 55px;
+                .skill_icon12 {
+                  width: 50px;
+                  height: 50px;
+                  background: url(../assets/Figma.png) 50% no-repeat;
+                  background-size: 50%;
+                }
+                .skill_icon13 {
+                  width: 50px;
+                  height: 50px;
+                  background: url(../assets/Clip_studio.png) 50% no-repeat;
+                  background-size: 70%;
+                }
+              }
             }
           }
         }
@@ -1131,10 +1434,12 @@
   }
   @keyframes ani05 {
     0% {
+      opacity: 0;
       top: 55%;
     }
     100% {
       top: 40%;
+      opacity: 1;
     }
   }
   @keyframes ani06 {

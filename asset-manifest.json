@@ -1,29 +1,31 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.0aec4741.css",
-    "main.js": "/Portfolio/static/js/main.775c09f1.js",
+    "main.css": "/Portfolio/static/css/main.a4393261.css",
+    "main.js": "/Portfolio/static/js/main.21345214.js",
+    "static/media/Comp2.mp4": "/Portfolio/static/media/Comp2.090a8943aed30b43c469.mp4",
     "static/media/Comp3.mp4": "/Portfolio/static/media/Comp3.c88bb4f3d9ff23122af9.mp4",
-    "static/media/Comp2.mp4": "/Portfolio/static/media/Comp2.5309b9adae3d1550f3ae.mp4",
-    "static/media/Comp5.mp4": "/Portfolio/static/media/Comp5.f735de486405558defbd.mp4",
-    "static/media/Comp6.mp4": "/Portfolio/static/media/Comp6.b39fb3173335de8dab17.mp4",
+    "static/media/Comp5.mp4": "/Portfolio/static/media/Comp5.a6e8b86ad3b7da5e4246.mp4",
+    "static/media/Comp6.mp4": "/Portfolio/static/media/Comp6.a9a3b1269a7cd732a145.mp4",
+    "static/media/Comp4.mp4": "/Portfolio/static/media/Comp4.ce65cd136597530c2f21.mp4",
     "static/media/artstationbanner.png": "/Portfolio/static/media/artstationbanner.baf8bb1fffecbb193947.png",
-    "static/media/Comp4.mp4": "/Portfolio/static/media/Comp4.5ea8584c4b063b43b71d.mp4",
     "static/media/1.png": "/Portfolio/static/media/1.4c6464970ad639c63361.png",
     "static/media/2.png": "/Portfolio/static/media/2.76b4da5c005476ebb707.png",
     "static/media/yangyangmockup.png": "/Portfolio/static/media/yangyangmockup.572375630818e63dc23e.png",
+    "static/media/WC01.png": "/Portfolio/static/media/WC01.5681dc4fbbf93ac976e3.png",
+    "static/media/html01.png": "/Portfolio/static/media/html01.61a5442e875be685fbe3.png",
     "static/media/lottieicons.png": "/Portfolio/static/media/lottieicons.fbb929fbc05ad17b272d.png",
+    "static/media/css01.PNG": "/Portfolio/static/media/css01.0c77b7fce6bfc4bbe399.PNG",
     "static/media/jordy.png": "/Portfolio/static/media/jordy.826a0afc0d973a9818e7.png",
     "static/media/Portfolio.svg": "/Portfolio/static/media/Portfolio.9e4fd8e99b4f6036a715fb882d1bf57d.svg",
-    "static/media/DevelopmentTools.svg": "/Portfolio/static/media/DevelopmentTools.6fb1ad8caf3f9c502c5c210804aa5f3e.svg",
-    "static/media/DesignTools.svg": "/Portfolio/static/media/DesignTools.c010ca1d918a491f68004f6a65edbb8a.svg",
-    "static/media/ToolIcon.svg": "/Portfolio/static/media/ToolIcon.d4190397420ca0cc92609432a9efd19a.svg",
+    "static/media/react.svg": "/Portfolio/static/media/react.1da5eff89749573706a9.svg",
+    "static/media/Group23.svg": "/Portfolio/static/media/Group23.10382d28163a0b4b31bd.svg",
     "index.html": "/Portfolio/index.html",
     "static/media/cusur.svg": "/Portfolio/static/media/cusur.34c2e5d754688e2c28dc.svg",
-    "main.0aec4741.css.map": "/Portfolio/static/css/main.0aec4741.css.map",
-    "main.775c09f1.js.map": "/Portfolio/static/js/main.775c09f1.js.map"
+    "main.a4393261.css.map": "/Portfolio/static/css/main.a4393261.css.map",
+    "main.21345214.js.map": "/Portfolio/static/js/main.21345214.js.map"
   },
   "entrypoints": [
-    "static/css/main.0aec4741.css",
-    "static/js/main.775c09f1.js"
+    "static/css/main.a4393261.css",
+    "static/js/main.21345214.js"
   ]
 }

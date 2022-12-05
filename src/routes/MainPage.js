@@ -13,6 +13,7 @@ import Contect from './Contect'
 
 import { motion } from 'framer-motion'
 import scroll from '../assets/scroll_down.json'
+import DesingPage from './DesingPage'
 
 const DIVIDER_HEIGHT = 5
 
@@ -23,6 +24,8 @@ function MainPage() {
   const [show01, setShow01] = useState(false)
   const [show02, setShow02] = useState(false)
   const [show03, setShow03] = useState(false)
+  const [show04, setShow04] = useState(false)
+  const [show05, setShow05] = useState(false)
 
   useEffect(() => {
     const wheelHandler = (e) => {
@@ -45,6 +48,8 @@ function MainPage() {
           setShow01(true)
           setShow02(false)
           setShow03(false)
+          setShow04(false)
+          setShow05(false)
           setScrollIndex(1)
         } else if (scrollTop >= pageHeight && scrollTop < pageHeight * 2) {
           //현재 2페이지
@@ -57,6 +62,8 @@ function MainPage() {
           setShow01(false)
           setShow02(true)
           setShow03(false)
+          setShow04(false)
+          setShow05(false)
           setScrollIndex(2)
         } else if (scrollTop >= pageHeight && scrollTop < pageHeight * 3) {
           //현재 3페이지
@@ -69,6 +76,8 @@ function MainPage() {
           setShow01(false)
           setShow02(false)
           setShow03(true)
+          setShow04(false)
+          setShow05(false)
           setScrollIndex(3)
         } else if (scrollTop >= pageHeight && scrollTop < pageHeight * 4) {
           //현재 4페이지
@@ -81,7 +90,23 @@ function MainPage() {
           setShow01(false)
           setShow02(false)
           setShow03(false)
+          setShow04(true)
+          setShow05(false)
           setScrollIndex(4)
+        } else if (scrollTop >= pageHeight && scrollTop < pageHeight * 5) {
+          //현재 5페이지
+          console.log('현재 3페이지, down')
+          outerDivRef.current.scrollTo({
+            top: pageHeight * 5 + DIVIDER_HEIGHT * 5,
+            left: 0,
+            behavior: 'smooth'
+          })
+          setShow01(false)
+          setShow02(false)
+          setShow03(false)
+          setShow04(false)
+          setShow05(true)
+          setScrollIndex(5)
         }
       } else {
         // 스크롤 올릴 때
@@ -105,6 +130,8 @@ function MainPage() {
           setShow01(true)
           setShow02(false)
           setShow03(false)
+          setShow04(false)
+          setShow05(false)
           setScrollIndex(3)
         } else if (scrollTop >= pageHeight && scrollTop < pageHeight * 4) {
           //현재 3페이지
@@ -117,6 +144,8 @@ function MainPage() {
           setShow01(false)
           setShow02(true)
           setShow03(false)
+          setShow04(false)
+          setShow05(false)
           setScrollIndex(4)
         } else if (scrollTop >= pageHeight && scrollTop < pageHeight * 5) {
           //현재 3페이지
@@ -128,7 +157,23 @@ function MainPage() {
           })
           setShow01(false)
           setShow02(false)
+          setShow03(true)
+          setShow04(false)
+          setShow05(false)
+          setScrollIndex(5)
+        } else if (scrollTop >= pageHeight && scrollTop < pageHeight * 6) {
+          //현재 3페이지
+          console.log('현재 3페이지, up')
+          outerDivRef.current.scrollTo({
+            top: pageHeight * 4 + DIVIDER_HEIGHT * 4,
+            left: 0,
+            behavior: 'smooth'
+          })
+          setShow01(false)
+          setShow02(false)
           setShow03(false)
+          setShow04(true)
+          setShow05(false)
           setScrollIndex(5)
         }
       }
@@ -363,7 +408,12 @@ function MainPage() {
             <OtherPage />
           </div>
         </section>
-        <section className={`contect_main ${show03 && 'contect_main_on'}`}>
+        <section className={`Desing_main ${show04 && 'Desing_main_on'}`}>
+          <div>
+            <DesingPage />
+          </div>
+        </section>
+        <section className={`contectpage_main ${show05 && 'contectpage_main_on'}`}>
           <div>
             <Contect />
           </div>

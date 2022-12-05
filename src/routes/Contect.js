@@ -16,7 +16,7 @@ function Contect() {
       </p>
       <div className="contect_sns">
         <ul className="sns_ul">
-          <li onClick={() => window.open('https://github.com/jihae96', '_blank')}>
+          <li onClick={() => window.open('https://github.com/JihaeLee1996', '_blank')}>
             <AiFillGithub className="Footer_icon" />
             <a className="Footer_a">Github</a>
           </li>

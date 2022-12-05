@@ -5,6 +5,7 @@ import MainPage from './routes/MainPage'
 import OtherPage from './routes/OtherPage'
 import SubPage from './routes/SubPage'
 import Contect from './routes/Contect'
+import DesingPage from './routes/DesingPage'
 
 function Router() {
   const Layout = () => {
@@ -23,6 +24,7 @@ function Router() {
           <Route index element={<MainPage />} />
           <Route index element={<SubPage />} />
           <Route index element={<OtherPage />} />
+          <Route index element={<DesingPage />} />
           <Route index element={<Contect />} />
         </Route>
       </Routes>

@@ -78,7 +78,7 @@ function SubPage() {
                           <li>
                             <h4>1.웹 표준 준수</h4>
                             <p>
-                              <VscCircleFilled className="VscCircleFilled" /> HTML/CSS WC 유효성 검사 Pass
+                              <VscCircleFilled className="VscCircleFilled" /> HTML/CSS W3C 웹 접근성 검사 Pass
                             </p>
                           </li>
                           <li>
@@ -213,7 +213,7 @@ function SubPage() {
                       <li>React</li>
                       <li>Javascript</li>
                       <li>Scss</li>
-                      <li>Spa</li>
+                      <li>SPA</li>
                       <li>Firebase</li>
                       <li>React-router-dom</li>
                     </ul>
@@ -224,10 +224,10 @@ function SubPage() {
                           <li>
                             <h4>1.주요기술</h4>
                             <p>
-                              <VscCircleFilled className="VscCircleFilled" /> firebase를 이용한 스토리지, 실시간 데이터 베이스 구현 및 로그인 기능
+                              <VscCircleFilled className="VscCircleFilled" /> firebase를 이용한 인증, 실시간 데이터 베이스, 스토리지 구현
                             </p>
                             <p>
-                              <VscCircleFilled className="VscCircleFilled" /> router를 이용한 페이지 정리화와 이동 기능
+                              <VscCircleFilled className="VscCircleFilled" /> Router를 이용해서 SPA를 구현
                             </p>
                             <p>
                               <VscCircleFilled className="VscCircleFilled" /> scss를 이용한 css정리 구현
@@ -246,7 +246,7 @@ function SubPage() {
                   <div className="sub_circle_inner">
                     <div className="sub_circle"></div>
                   </div>
-                  <div className="sub_video2">
+                  <div className="sub_video4">
                     <video id="video" preload="auto" autoPlay={true} loop="loop" muted="muted" volume="0">
                       <source src={Comp4} width="300" height="600"></source>
                     </video>
@@ -256,7 +256,7 @@ function SubPage() {
               <div className="sub_btn">
                 <div className="sub_btn_1">
                   <button>
-                    <a onClick={() => window.open('https://jihaelee1996.github.io/kakao_app/', '_blank', 'width=480, height=1200')}>
+                    <a onClick={() => window.open('https://jihaelee1996.github.io/kakao_app/', '_blank', 'width=375, height=812')}>
                       Page <MdOpenInNew className="MdOpenInNew" />
                     </a>
                   </button>
@@ -287,7 +287,7 @@ function SubPage() {
                       <li>React</li>
                       <li>Javascript</li>
                       <li>Scss</li>
-                      <li>Spa</li>
+                      <li>SPA</li>
                       <li>Firebase</li>
                       <li>Axios</li>
                       <li>React-router-dom</li>
@@ -297,14 +297,7 @@ function SubPage() {
                       <li>
                         <ul className="sub_cont_text">
                           <li>
-                            <h4>1.반응형 앱 제작</h4>
-                            <p>
-                              <VscCircleFilled className="VscCircleFilled" /> pc,tablet,mobile
-                            </p>
-                          </li>
-                          <br />
-                          <li>
-                            <h4>2.주요기술</h4>
+                            <h4>1.주요기술</h4>
                             <p>
                               <VscCircleFilled className="VscCircleFilled" /> firebase를 이용한 스토리지 구현 및 로그인 기능
                             </p>
@@ -315,10 +308,13 @@ function SubPage() {
                               <VscCircleFilled className="VscCircleFilled" /> Swiper Slid 구현
                             </p>
                             <p>
-                              <VscCircleFilled className="VscCircleFilled" /> 외부 데이터를 props를 통해 컴포넌트에게 값 전달하기
+                              <VscCircleFilled className="VscCircleFilled" /> axios를 사용해서 영화 api를 가져옴
                             </p>
                             <p>
                               <VscCircleFilled className="VscCircleFilled" /> Modal창을 이용한 팝업창 구현
+                            </p>
+                            <p>
+                              <VscCircleFilled className="VscCircleFilled" /> CSS반응형 구현
                             </p>
                           </li>
                         </ul>
@@ -338,7 +334,7 @@ function SubPage() {
               <div className="sub_btn">
                 <div className="sub_btn_1">
                   <button>
-                    <a onClick={() => window.open('https://jihaelee1996.github.io/netflix_app/', '_blank', 'width=480, height=1200')}>
+                    <a onClick={() => window.open('https://jihaelee1996.github.io/netflix_app/', '_blank', 'width=375, height=812')}>
                       Page <MdOpenInNew className="MdOpenInNew" />
                     </a>
                   </button>
@@ -369,7 +365,7 @@ function SubPage() {
                       <li>React</li>
                       <li>Javascript</li>
                       <li>Scss</li>
-                      <li>Spa</li>
+                      <li>SPA</li>
                       <li>Firebase</li>
                       <li>React-router-dom</li>
                       <li>Lottie</li>
@@ -427,7 +423,7 @@ function SubPage() {
               <div className="sub_btn">
                 <div className="sub_btn_1">
                   <button>
-                    <a onClick={() => window.open('https://jihaelee1996.github.io/portfolio_forest/', '_blank', 'width=480, height=1200')}>
+                    <a onClick={() => window.open('https://jihaelee1996.github.io/portfolio_forest/', '_blank', 'width=375, height=812')}>
                       Page <MdOpenInNew className="MdOpenInNew" />
                     </a>
                   </button>

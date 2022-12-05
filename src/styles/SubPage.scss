@@ -88,8 +88,8 @@
           box-sizing: border-box;
 
           position: absolute;
-          width: 200px;
-          height: 370px;
+          width: 198px;
+          height: 357px;
           left: 50%;
           transform: translateX(-50%);
           top: 270px;
@@ -98,9 +98,59 @@
           border: 10px solid rgb(0, 0, 0);
 
           overflow: hidden;
-          border-radius: 43px;
+          border-radius: 35px;
           video {
-            width: 100%;
+            width: 105%;
+            position: absolute;
+            top: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+        }
+        .sub_video4 {
+          box-sizing: border-box;
+
+          position: absolute;
+          width: 198px;
+          height: 357px;
+          left: 50%;
+          transform: translateX(-50%);
+          top: 270px;
+          backdrop-filter: blur(2px);
+          /* Note: backdrop-filter has minimal browser support */
+          border: 10px solid rgb(0, 0, 0);
+
+          overflow: hidden;
+          border-radius: 35px;
+          video {
+            width: 108%;
+            position: absolute;
+            top: -11px;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+        }
+        .sub_video3 {
+          box-sizing: border-box;
+
+          position: absolute;
+          width: 198px;
+          height: 357px;
+          left: 50%;
+          transform: translateX(-50%);
+          top: 270px;
+          backdrop-filter: blur(2px);
+          /* Note: backdrop-filter has minimal browser support */
+          border: 10px solid rgb(0, 0, 0);
+
+          overflow: hidden;
+          border-radius: 35px;
+          video {
+            position: absolute;
+            left: 50%;
+            top: -15px;
+            transform: translateX(-50%);
+            width: 110%;
           }
         }
 
@@ -281,23 +331,73 @@
             width: 100%;
           }
         }
-        .sub_video2 {
+        .sub_video4 {
           box-sizing: border-box;
 
           position: absolute;
-          width: 250px;
-          height: 480px;
+          width: 220px;
+          height: 407px;
           left: 50%;
           transform: translateX(-50%);
-          top: 150px;
+          top: 200px;
           backdrop-filter: blur(2px);
           /* Note: backdrop-filter has minimal browser support */
           border: 10px solid rgb(0, 0, 0);
 
           overflow: hidden;
-          border-radius: 43px;
+          border-radius: 38px;
           video {
-            width: 100%;
+            width: 110%;
+            position: absolute;
+            top: -14px;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+        }
+        .sub_video2 {
+          box-sizing: border-box;
+
+          position: absolute;
+          width: 220px;
+          height: 407px;
+          left: 50%;
+          transform: translateX(-50%);
+          top: 200px;
+          backdrop-filter: blur(2px);
+          /* Note: backdrop-filter has minimal browser support */
+          border: 10px solid rgb(0, 0, 0);
+
+          overflow: hidden;
+          border-radius: 38px;
+          video {
+            width: 107%;
+            position: absolute;
+            top: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+        }
+        .sub_video3 {
+          box-sizing: border-box;
+
+          position: absolute;
+          width: 220px;
+          height: 407px;
+          left: 50%;
+          transform: translateX(-50%);
+          top: 200px;
+          backdrop-filter: blur(2px);
+          /* Note: backdrop-filter has minimal browser support */
+          border: 10px solid rgb(0, 0, 0);
+
+          overflow: hidden;
+          border-radius: 38px;
+          video {
+            position: absolute;
+            left: 50%;
+            top: -15px;
+            transform: translateX(-50%);
+            width: 110%;
           }
         }
 
@@ -517,6 +617,26 @@
             top: -10px;
             transform: translateX(-50%);
             width: 105%;
+          }
+        }
+        .sub_video4 {
+          box-sizing: border-box;
+          position: absolute;
+          width: 310px;
+          height: 560px;
+          left: 284px;
+          top: 366px;
+          backdrop-filter: blur(2px);
+          /* Note: backdrop-filter has minimal browser support */
+          border: 15px solid rgb(0, 0, 0);
+          overflow: hidden;
+          border-radius: 40px;
+          video {
+            position: absolute;
+            left: 50%;
+            top: -19px;
+            transform: translateX(-50%);
+            width: 109%;
           }
         }
         .sub_video3 {

@@ -75,6 +75,23 @@
       height: 100vh;
       overflow: hidden;
       animation: ani04 0.5s linear 0.1s forwards;
+      .main2_h3 {
+        font-size: clamp(1rem, 3vw + 1rem, 4rem);
+        position: absolute;
+        top: 150px;
+        left: 10%;
+        font-weight: 100;
+      }
+      .subtitle {
+        z-index: 100;
+        position: absolute;
+        top: 170px;
+        left: 10%;
+        font-size: 15px;
+        opacity: 1;
+        font-weight: 200;
+        transform: translateY(3rem);
+      }
       .main_content2 {
         opacity: 1;
         width: 80%;
@@ -89,54 +106,128 @@
         animation: ani05_2 0.5s linear 0.2s forwards;
         .profile_1 {
           h3 {
-            font-size: 30px;
-            text-align: center;
-            margin-bottom: 25px;
+            display: none;
           }
           .profile_1_1 {
-            p {
-              text-align: center;
-            }
-            strong {
-              text-align: center;
-              font-weight: 900;
-              font-size: 16px;
-            }
-            em {
-              text-align: center;
-              font-size: 12px;
-            }
+            display: none;
           }
           .profile_1_2 {
-            margin-top: 10px;
-            text-align: center;
-            strong {
-              text-align: center;
-              font-weight: 900;
-              font-size: 16px;
-            }
+            display: none;
           }
           .profile_1_3 {
-            margin-top: 10px;
-            display: flex;
-            img:nth-child(1) {
-              padding-left: 0;
-              width: 50px;
-              display: block;
-              height: 35px;
-              margin-top: 10px;
-            }
-            img:nth-child(2) {
-              width: 150px;
-              display: block;
-              height: 35px;
-              margin-top: 10px;
-            }
-            img:nth-child(3) {
-              width: 250px;
-              display: block;
-              height: 35px;
-              margin-top: 10px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 30%;
+            ul {
+              margin: 0 auto;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              li > div {
+                margin-right: 20px;
+                p {
+                  position: relative;
+                  text-align: center;
+                  top: 40px;
+                  left: -2px;
+                  font-size: 8px;
+                }
+              }
+              .group01 {
+                justify-content: center;
+                display: flex;
+                .skill_icon01 {
+                  width: 40px;
+                  height: 40px;
+                  background: url(../assets/react.svg) 50% no-repeat;
+                  background-size: cover;
+                }
+                .skill_icon02 {
+                  width: 40px;
+                  height: 40px;
+                  background: url(../assets/HTML5.png) 50% no-repeat;
+                  background-size: 90%;
+                }
+                .skill_icon03 {
+                  width: 40px;
+                  height: 40px;
+                  background: url(../assets/CSS3.png) 50% no-repeat;
+                  background-size: 65%;
+                }
+                .skill_icon04 {
+                  width: 40px;
+                  height: 40px;
+                  background: url(../assets/JavaScript.png) 50% no-repeat;
+                  background-size: 75%;
+                }
+                .skill_icon05 {
+                  width: 40px;
+                  height: 40px;
+                  background: url(../assets/Sass.png) 50% no-repeat;
+                  background-size: 80%;
+                }
+              }
+              .group02 {
+                justify-content: center;
+                display: flex;
+                position: relative;
+                top: 40px;
+                .skill_icon06 {
+                  width: 40px;
+                  height: 40px;
+                  background: url(../assets/Adobe_Photoshop.png) 50% no-repeat;
+                  background-size: 70%;
+                }
+                .skill_icon07 {
+                  width: 40px;
+                  height: 40px;
+                  background: url(../assets/Adobe_Illustrator.png) 50% no-repeat;
+                  background-size: 70%;
+                }
+                .skill_icon08 {
+                  width: 40px;
+                  height: 40px;
+                  background: url(../assets/Adobe_InDesign.png) 50% no-repeat;
+                  background-size: 70%;
+                }
+                .skill_icon09 {
+                  width: 40px;
+                  height: 40px;
+                  background: url(../assets/Adobe_After_Effects.png) 50% no-repeat;
+                  background-size: 70%;
+                }
+                .skill_icon10 {
+                  width: 40px;
+                  height: 40px;
+                  background: url(../assets/Adobe_Premiere.png) 50% no-repeat;
+                  background-size: 70%;
+                }
+                .skill_icon11 {
+                  width: 40px;
+                  height: 40px;
+                  background: url(../assets/Adobe_XD.png) 50% no-repeat;
+                  background-size: 70%;
+                }
+              }
+              .group03 {
+                justify-content: center;
+                top: 80px;
+                display: flex;
+                position: relative;
+                .skill_icon12 {
+                  width: 40px;
+                  height: 40px;
+                  background: url(../assets/Figma.png) 50% no-repeat;
+                  background-size: 50%;
+                }
+                .skill_icon13 {
+                  width: 40px;
+                  height: 40px;
+                  background: url(../assets/Clip_studio.png) 50% no-repeat;
+                  background-size: 70%;
+                }
+              }
             }
           }
         }
@@ -144,54 +235,10 @@
           display: none;
         }
         .profile_2 {
-          margin-top: 100px;
-          width: 100%;
-          .profile_2_1 > ul {
-            strong {
-              text-align: center;
-              font-weight: 700;
-              font-size: 16px;
-            }
-            em {
-              text-align: center;
-              font-size: 13px;
-              display: block;
-              margin: 5px 0;
-            }
-            li {
-              display: none;
-            }
-            p {
-              text-align: center;
-              font-size: 14px;
-            }
-            .MdArrowRightAlt {
-              width: 30px;
-              height: 15px;
-            }
-          }
+          display: none;
         }
         .profile_3 {
-          margin-top: 30px;
-          width: 100%;
-          .profile_3_1 > ul {
-            strong {
-              font-weight: 700;
-              font-size: 16px;
-            }
-            em {
-              font-size: 13px;
-              display: block;
-            }
-            li {
-              text-align: center;
-              display: none;
-            }
-            p {
-              text-align: center;
-              font-size: 14px;
-            }
-          }
+          display: none;
         }
       }
       .main_content2_circle1 {
@@ -208,6 +255,24 @@
       width: 100%;
       height: 100vh;
       overflow: hidden;
+      animation: ani04 0.5s linear 0.1s forwards;
+      .main2_h3 {
+        font-size: clamp(1rem, 3vw + 1rem, 4rem);
+        position: absolute;
+        top: 150px;
+        left: 10%;
+        font-weight: 100;
+      }
+      .subtitle {
+        z-index: 100;
+        position: absolute;
+        top: 170px;
+        left: 10%;
+        font-size: 15px;
+        opacity: 1;
+        font-weight: 200;
+        transform: translateY(3rem);
+      }
       .main_content2 {
         opacity: 1;
         width: 80%;
@@ -219,52 +284,131 @@
         transform: translateX(-50%);
         display: flex;
         flex-direction: column;
+        animation: ani05_2 0.5s linear 0.2s forwards;
         .profile_1 {
           h3 {
-            font-size: 30px;
-            text-align: center;
-            margin-bottom: 25px;
+            display: none;
           }
           .profile_1_1 {
-            p {
-              text-align: center;
-            }
-            strong {
-              font-weight: 900;
-              font-size: 16px;
-            }
-            em {
-              font-size: 12px;
-            }
+            display: none;
           }
           .profile_1_2 {
-            margin-top: 10px;
-            strong {
-              font-weight: 900;
-              font-size: 16px;
-            }
+            display: none;
           }
           .profile_1_3 {
-            margin-top: 10px;
-            display: flex;
-            img:nth-child(1) {
-              padding-left: 0;
-              width: 50px;
-              display: block;
-              height: 35px;
-              margin-top: 10px;
-            }
-            img:nth-child(2) {
-              width: 150px;
-              display: block;
-              height: 35px;
-              margin-top: 10px;
-            }
-            img:nth-child(3) {
-              width: 250px;
-              display: block;
-              height: 35px;
-              margin-top: 10px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 30%;
+            ul {
+              margin: 0 auto;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              li > div {
+                margin-right: 20px;
+                p {
+                  position: relative;
+                  text-align: center;
+                  top: 40px;
+                  left: -2px;
+                  font-size: 8px;
+                }
+              }
+              .group01 {
+                justify-content: center;
+                display: flex;
+                .skill_icon01 {
+                  width: 40px;
+                  height: 40px;
+                  background: url(../assets/react.svg) 50% no-repeat;
+                  background-size: cover;
+                }
+                .skill_icon02 {
+                  width: 40px;
+                  height: 40px;
+                  background: url(../assets/HTML5.png) 50% no-repeat;
+                  background-size: 90%;
+                }
+                .skill_icon03 {
+                  width: 40px;
+                  height: 40px;
+                  background: url(../assets/CSS3.png) 50% no-repeat;
+                  background-size: 65%;
+                }
+                .skill_icon04 {
+                  width: 40px;
+                  height: 40px;
+                  background: url(../assets/JavaScript.png) 50% no-repeat;
+                  background-size: 75%;
+                }
+                .skill_icon05 {
+                  width: 40px;
+                  height: 40px;
+                  background: url(../assets/Sass.png) 50% no-repeat;
+                  background-size: 80%;
+                }
+              }
+              .group02 {
+                justify-content: center;
+                display: flex;
+                position: relative;
+                top: 40px;
+                .skill_icon06 {
+                  width: 40px;
+                  height: 40px;
+                  background: url(../assets/Adobe_Photoshop.png) 50% no-repeat;
+                  background-size: 70%;
+                }
+                .skill_icon07 {
+                  width: 40px;
+                  height: 40px;
+                  background: url(../assets/Adobe_Illustrator.png) 50% no-repeat;
+                  background-size: 70%;
+                }
+                .skill_icon08 {
+                  width: 40px;
+                  height: 40px;
+                  background: url(../assets/Adobe_InDesign.png) 50% no-repeat;
+                  background-size: 70%;
+                }
+                .skill_icon09 {
+                  width: 40px;
+                  height: 40px;
+                  background: url(../assets/Adobe_After_Effects.png) 50% no-repeat;
+                  background-size: 70%;
+                }
+                .skill_icon10 {
+                  width: 40px;
+                  height: 40px;
+                  background: url(../assets/Adobe_Premiere.png) 50% no-repeat;
+                  background-size: 70%;
+                }
+                .skill_icon11 {
+                  width: 40px;
+                  height: 40px;
+                  background: url(../assets/Adobe_XD.png) 50% no-repeat;
+                  background-size: 70%;
+                }
+              }
+              .group03 {
+                justify-content: center;
+                top: 80px;
+                display: flex;
+                position: relative;
+                .skill_icon12 {
+                  width: 40px;
+                  height: 40px;
+                  background: url(../assets/Figma.png) 50% no-repeat;
+                  background-size: 50%;
+                }
+                .skill_icon13 {
+                  width: 40px;
+                  height: 40px;
+                  background: url(../assets/Clip_studio.png) 50% no-repeat;
+                  background-size: 70%;
+                }
+              }
             }
           }
         }
@@ -272,53 +416,10 @@
           display: none;
         }
         .profile_2 {
-          margin-top: 100px;
-          width: 100%;
-          .profile_2_1 > ul {
-            strong {
-              font-weight: 700;
-              font-size: 16px;
-            }
-            em {
-              font-size: 13px;
-              display: block;
-              margin: 5px 0;
-            }
-            li {
-              text-align: center;
-              display: none;
-            }
-            p {
-              text-align: center;
-              font-size: 14px;
-            }
-            .MdArrowRightAlt {
-              width: 30px;
-              height: 15px;
-            }
-          }
+          display: none;
         }
         .profile_3 {
-          margin-top: 30px;
-          width: 100%;
-          .profile_3_1 > ul {
-            strong {
-              font-weight: 700;
-              font-size: 16px;
-            }
-            em {
-              font-size: 13px;
-              display: block;
-            }
-            li {
-              text-align: center;
-              display: none;
-            }
-            p {
-              text-align: center;
-              font-size: 14px;
-            }
-          }
+          display: none;
         }
       }
       .main_content2_circle1 {
@@ -370,6 +471,24 @@
     filter: blur(1px);
     &::-webkit-scrollbar {
       display: none;
+    }
+    .Desing_main {
+      width: 100%;
+      height: 100%;
+    }
+    .Desing_main_on {
+      width: 100%;
+      height: 100%;
+      animation: ani06 0.5s linear 0.2s forwards;
+    }
+    .contectpage_main {
+      width: 100%;
+      height: 100%;
+    }
+    .contectpage_main_on {
+      width: 100%;
+      height: 100%;
+      animation: ani04 0.5s linear 0.2s forwards;
     }
   }
   @keyframes ani04 {
@@ -484,6 +603,12 @@
       height: 100vh;
       overflow: hidden;
       animation: ani04 0.5s linear 0.1s forwards;
+      .main2_h3 {
+        display: none;
+      }
+      .subtitle {
+        display: none;
+      }
       .main_content2 {
         opacity: 1;
         width: 80%;
@@ -518,26 +643,108 @@
             }
           }
           .profile_1_3 {
-            margin-top: 10px;
-            display: flex;
-            img:nth-child(1) {
-              padding-left: 0;
-              width: 50px;
-              display: block;
-              height: 35px;
-              margin-top: 10px;
-            }
-            img:nth-child(2) {
-              width: 150px;
-              display: block;
-              height: 35px;
-              margin-top: 10px;
-            }
-            img:nth-child(3) {
-              width: 250px;
-              display: block;
-              height: 35px;
-              margin-top: 10px;
+            margin-top: 45px;
+            ul {
+              display: flex;
+              li > div {
+                margin-right: 20px;
+                p {
+                  position: relative;
+                  text-align: center;
+                  top: 40px;
+                  left: -2px;
+                  font-size: 8px;
+                }
+              }
+              .group01 {
+                display: flex;
+                .skill_icon01 {
+                  width: 40px;
+                  height: 40px;
+                  background: url(../assets/react.svg) 50% no-repeat;
+                  background-size: cover;
+                }
+                .skill_icon02 {
+                  width: 40px;
+                  height: 40px;
+                  background: url(../assets/HTML5.png) 50% no-repeat;
+                  background-size: 90%;
+                }
+                .skill_icon03 {
+                  width: 40px;
+                  height: 40px;
+                  background: url(../assets/CSS3.png) 50% no-repeat;
+                  background-size: 65%;
+                }
+                .skill_icon04 {
+                  width: 40px;
+                  height: 40px;
+                  background: url(../assets/JavaScript.png) 50% no-repeat;
+                  background-size: 75%;
+                }
+                .skill_icon05 {
+                  width: 40px;
+                  height: 40px;
+                  background: url(../assets/Sass.png) 50% no-repeat;
+                  background-size: 80%;
+                }
+              }
+              .group02 {
+                display: flex;
+                position: relative;
+                .skill_icon06 {
+                  width: 40px;
+                  height: 40px;
+                  background: url(../assets/Adobe_Photoshop.png) 50% no-repeat;
+                  background-size: 70%;
+                }
+                .skill_icon07 {
+                  width: 40px;
+                  height: 40px;
+                  background: url(../assets/Adobe_Illustrator.png) 50% no-repeat;
+                  background-size: 70%;
+                }
+                .skill_icon08 {
+                  width: 40px;
+                  height: 40px;
+                  background: url(../assets/Adobe_InDesign.png) 50% no-repeat;
+                  background-size: 70%;
+                }
+                .skill_icon09 {
+                  width: 40px;
+                  height: 40px;
+                  background: url(../assets/Adobe_After_Effects.png) 50% no-repeat;
+                  background-size: 70%;
+                }
+                .skill_icon10 {
+                  width: 40px;
+                  height: 40px;
+                  background: url(../assets/Adobe_Premiere.png) 50% no-repeat;
+                  background-size: 70%;
+                }
+                .skill_icon11 {
+                  width: 40px;
+                  height: 40px;
+                  background: url(../assets/Adobe_XD.png) 50% no-repeat;
+                  background-size: 70%;
+                }
+              }
+              .group03 {
+                display: flex;
+                position: relative;
+                .skill_icon12 {
+                  width: 40px;
+                  height: 40px;
+                  background: url(../assets/Figma.png) 50% no-repeat;
+                  background-size: 50%;
+                }
+                .skill_icon13 {
+                  width: 40px;
+                  height: 40px;
+                  background: url(../assets/Clip_studio.png) 50% no-repeat;
+                  background-size: 70%;
+                }
+              }
             }
           }
         }
@@ -609,6 +816,12 @@
       width: 100%;
       height: 100vh;
       overflow: hidden;
+      .main2_h3 {
+        display: none;
+      }
+      .subtitle {
+        display: none;
+      }
       .main_content2 {
         opacity: 1;
         width: 80%;
@@ -745,6 +958,24 @@
       height: 100%;
       animation: ani06 0.5s linear 0.2s forwards;
     }
+  }
+  .Desing_main {
+    width: 100%;
+    height: 100%;
+  }
+  .Desing_main_on {
+    width: 100%;
+    height: 100%;
+    animation: ani06 0.5s linear 0.2s forwards;
+  }
+  .contectpage_main {
+    width: 100%;
+    height: 100%;
+  }
+  .contectpage_main_on {
+    width: 100%;
+    height: 100%;
+    animation: ani04 0.5s linear 0.2s forwards;
   }
   .main__bg {
     z-index: -1;
@@ -1397,6 +1628,24 @@
       width: 100%;
       height: 100%;
       animation: ani06 0.5s linear 0.2s forwards;
+    }
+    .Desing_main {
+      width: 100%;
+      height: 100%;
+    }
+    .Desing_main_on {
+      width: 100%;
+      height: 100%;
+      animation: ani06 0.5s linear 0.2s forwards;
+    }
+    .contectpage_main {
+      width: 100%;
+      height: 100%;
+    }
+    .contectpage_main_on {
+      width: 100%;
+      height: 100%;
+      animation: ani04 0.5s linear 0.2s forwards;
     }
   }
   .main__bg {

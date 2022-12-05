@@ -55,7 +55,7 @@ function SubPage() {
                   <div className="Subpage_Modal03">
                     {modalOpen03 && <Modal03 setModalOpen={setModalOpen03} />}
                     <div className="Subpage_modal_btn" onClick={ModalCont03}>
-                      <p>유호성 검사</p>
+                      <p>유효성 검사</p>
                     </div>
                   </div>
                   <h2 className="sub_number">01</h2>
@@ -437,7 +437,7 @@ function SubPage() {
                     </a>
                   </button>
                   <button>
-                    <a onClick={() => document.open((document = '../assets/forest.pdf'))}>
+                    <a onClick={() => window.open('https://drive.google.com/file/d/1WMDe42rOgTvBDAuoyoWfLIyk6MYhNCDm/view?usp=sharing', '_blank')}>
                       기획파일 <MdOpenInNew className="MdOpenInNew" />
                     </a>
                   </button>

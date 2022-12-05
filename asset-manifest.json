@@ -1,31 +1,28 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.a4393261.css",
-    "main.js": "/Portfolio/static/js/main.60944e26.js",
+    "main.css": "/Portfolio/static/css/main.da90090c.css",
+    "main.js": "/Portfolio/static/js/main.b04e2725.js",
     "static/media/Comp2.mp4": "/Portfolio/static/media/Comp2.090a8943aed30b43c469.mp4",
     "static/media/Comp3.mp4": "/Portfolio/static/media/Comp3.c88bb4f3d9ff23122af9.mp4",
     "static/media/Comp5.mp4": "/Portfolio/static/media/Comp5.a6e8b86ad3b7da5e4246.mp4",
     "static/media/Comp6.mp4": "/Portfolio/static/media/Comp6.a9a3b1269a7cd732a145.mp4",
-    "static/media/Comp4.mp4": "/Portfolio/static/media/Comp4.ce65cd136597530c2f21.mp4",
+    "static/media/Comp4.mp4": "/Portfolio/static/media/Comp4.35483a9d29c982dfa2f6.mp4",
     "static/media/artstationbanner.png": "/Portfolio/static/media/artstationbanner.baf8bb1fffecbb193947.png",
     "static/media/1.png": "/Portfolio/static/media/1.4c6464970ad639c63361.png",
-    "static/media/2.png": "/Portfolio/static/media/2.76b4da5c005476ebb707.png",
     "static/media/yangyangmockup.png": "/Portfolio/static/media/yangyangmockup.572375630818e63dc23e.png",
     "static/media/WC01.png": "/Portfolio/static/media/WC01.5681dc4fbbf93ac976e3.png",
-    "static/media/html01.png": "/Portfolio/static/media/html01.61a5442e875be685fbe3.png",
-    "static/media/lottieicons.png": "/Portfolio/static/media/lottieicons.fbb929fbc05ad17b272d.png",
+    "static/media/html01_1.PNG": "/Portfolio/static/media/html01_1.a57bea8823703aad772e.PNG",
     "static/media/css01.PNG": "/Portfolio/static/media/css01.0c77b7fce6bfc4bbe399.PNG",
-    "static/media/jordy.png": "/Portfolio/static/media/jordy.826a0afc0d973a9818e7.png",
     "static/media/Portfolio.svg": "/Portfolio/static/media/Portfolio.9e4fd8e99b4f6036a715fb882d1bf57d.svg",
     "static/media/react.svg": "/Portfolio/static/media/react.1da5eff89749573706a9.svg",
     "static/media/Group23.svg": "/Portfolio/static/media/Group23.10382d28163a0b4b31bd.svg",
     "index.html": "/Portfolio/index.html",
     "static/media/cusur.svg": "/Portfolio/static/media/cusur.34c2e5d754688e2c28dc.svg",
-    "main.a4393261.css.map": "/Portfolio/static/css/main.a4393261.css.map",
-    "main.60944e26.js.map": "/Portfolio/static/js/main.60944e26.js.map"
+    "main.da90090c.css.map": "/Portfolio/static/css/main.da90090c.css.map",
+    "main.b04e2725.js.map": "/Portfolio/static/js/main.b04e2725.js.map"
   },
   "entrypoints": [
-    "static/css/main.a4393261.css",
-    "static/js/main.60944e26.js"
+    "static/css/main.da90090c.css",
+    "static/js/main.b04e2725.js"
   ]
 }

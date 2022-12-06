@@ -334,12 +334,12 @@ function SubPage() {
               <div className="sub_btn">
                 <div className="sub_btn_1">
                   <button>
-                    <a onClick={() => window.open('https://jihaelee1996.github.io/netflix_app/', '_blank', 'width=375, height=812')}>
+                    <a onClick={() => window.open('https://jihaelee1996.github.io/nf_app/', '_blank', 'width=375, height=812')}>
                       Page <MdOpenInNew className="MdOpenInNew" />
                     </a>
                   </button>
                   <button>
-                    <a onClick={() => window.open('https://github.com/jihaelee1996/netflix_app', '_blank')}>
+                    <a onClick={() => window.open('https://github.com/JihaeLee1996/nf_app', '_blank')}>
                       Repository <MdOpenInNew className="MdOpenInNew" />
                     </a>
                   </button>

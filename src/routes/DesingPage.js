@@ -35,15 +35,6 @@ function DesingPage() {
         </div>
       </div>
       <Lottie
-        className="Desing_background01"
-        mode={'bounce'}
-        speed={2}
-        loop
-        style={{ display: 'block', width: 800, fontSize: '16', margin: '0 auto', marginBottom: '4px' }}
-        animationData={DesingPagebg}
-      />
-
-      <Lottie
         className="Desing_scroll"
         mode={'bounce'}
         speed={2}

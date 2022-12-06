@@ -438,6 +438,17 @@ function SubPage() {
                     </a>
                   </button>
                   <button>
+                    <a
+                      onClick={() =>
+                        window.open(
+                          'https://www.figma.com/proto/dZ9xDHzUAXeP0JdSlmgXjw/%EC%9D%B4%EC%A7%80%ED%95%B4?node-id=90%3A701&starting-point-node-id=90%3A715',
+                          '_blank'
+                        )
+                      }>
+                      Figma <MdOpenInNew className="MdOpenInNew" />
+                    </a>
+                  </button>
+                  <button>
                     <a onClick={() => window.open('https://www.behance.net/gallery/156630789/forest', '_blank')}>
                       behance <MdOpenInNew className="MdOpenInNew" />
                     </a>

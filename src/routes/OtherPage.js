@@ -1,7 +1,6 @@
 import React, { useRef, useState } from 'react'
 import Lottie from 'lottie-react'
 import scroll from '../assets/scroll_down.json'
-import DesingPagebg02 from '../assets/3dmonobg02.json'
 
 import community from '../assets/community.json'
 import home from '../assets/home.json'
@@ -167,14 +166,6 @@ function OtherPage() {
             </div>
           </div>
         </div>
-        <Lottie
-          className="Desing_background02"
-          mode={'bounce'}
-          speed={1}
-          loop
-          style={{ display: 'block', width: 800, fontSize: '16', margin: '0 auto', marginBottom: '4px' }}
-          animationData={DesingPagebg02}
-        />
         <Lottie
           className="Othersection_scroll"
           mode={'bounce'}

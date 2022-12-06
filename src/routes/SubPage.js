@@ -111,12 +111,12 @@ function SubPage() {
               <div className="sub_btn">
                 <div className="sub_btn_1">
                   <button>
-                    <a onClick={() => window.open('https://jihaelee1996.github.io/NCSOFT/', '_blank')}>
+                    <a onClick={() => window.open('https://jihae1996.github.io/NCSOFT/', '_blank')}>
                       Page <MdOpenInNew className="MdOpenInNew" />
                     </a>
                   </button>
                   <button>
-                    <a onClick={() => window.open('https://github.com/jihaelee1996/NCSOFT', '_blank')}>
+                    <a onClick={() => window.open('https://github.com/jihae1996/NCSOFT', '_blank')}>
                       Repository <MdOpenInNew className="MdOpenInNew" />
                     </a>
                   </button>
@@ -183,12 +183,12 @@ function SubPage() {
               <div className="sub_btn">
                 <div className="sub_btn_1">
                   <button>
-                    <a onClick={() => window.open('https://jihaelee1996.github.io/webProject02/', '_blank')}>
+                    <a onClick={() => window.open('https://jihae1996.github.io/webProject02/', '_blank')}>
                       Page <MdOpenInNew className="MdOpenInNew" />
                     </a>
                   </button>
                   <button>
-                    <a onClick={() => window.open('https://github.com/jihaelee1996/webProject02', '_blank')}>
+                    <a onClick={() => window.open('https://github.com/jihae1996/webProject02', '_blank')}>
                       Repository <MdOpenInNew className="MdOpenInNew" />
                     </a>
                   </button>
@@ -256,12 +256,12 @@ function SubPage() {
               <div className="sub_btn">
                 <div className="sub_btn_1">
                   <button>
-                    <a onClick={() => window.open('https://jihaelee1996.github.io/kakao_app/', '_blank', 'width=375, height=812')}>
+                    <a onClick={() => window.open('https://jihae1996.github.io/kakao_app/', '_blank', 'width=375, height=812')}>
                       Page <MdOpenInNew className="MdOpenInNew" />
                     </a>
                   </button>
                   <button>
-                    <a onClick={() => window.open('https://github.com/jihaelee1996/kakao_app', '_blank')}>
+                    <a onClick={() => window.open('https://github.com/jihae1996/kakao_app', '_blank')}>
                       Repository <MdOpenInNew className="MdOpenInNew" />
                     </a>
                   </button>
@@ -334,12 +334,12 @@ function SubPage() {
               <div className="sub_btn">
                 <div className="sub_btn_1">
                   <button>
-                    <a onClick={() => window.open('https://jihaelee1996.github.io/nf_app/', '_blank', 'width=375, height=812')}>
+                    <a onClick={() => window.open('https://jihae1996.github.io/nf_app/', '_blank', 'width=375, height=812')}>
                       Page <MdOpenInNew className="MdOpenInNew" />
                     </a>
                   </button>
                   <button>
-                    <a onClick={() => window.open('https://github.com/JihaeLee1996/nf_app', '_blank')}>
+                    <a onClick={() => window.open('https://github.com/jihae1996/nf_app', '_blank')}>
                       Repository <MdOpenInNew className="MdOpenInNew" />
                     </a>
                   </button>
@@ -423,12 +423,12 @@ function SubPage() {
               <div className="sub_btn">
                 <div className="sub_btn_1">
                   <button>
-                    <a onClick={() => window.open('https://jihaelee1996.github.io/portfolio_forest/', '_blank', 'width=375, height=812')}>
+                    <a onClick={() => window.open('https://jihae1996.github.io/portfolio_forest/', '_blank', 'width=375, height=812')}>
                       Page <MdOpenInNew className="MdOpenInNew" />
                     </a>
                   </button>
                   <button>
-                    <a onClick={() => window.open('https://github.com/jihaelee1996/portfolio_forest', '_blank')}>
+                    <a onClick={() => window.open('https://github.com/jihae1996/portfolio_forest', '_blank')}>
                       Repository <MdOpenInNew className="MdOpenInNew" />
                     </a>
                   </button>

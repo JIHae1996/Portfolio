@@ -270,90 +270,13 @@ function SubPage() {
               </div>
             </section>
           </SwiperSlide>
-          <SwiperSlide>
-            {/* 4 */}
-            <section className="sub_container_section">
-              <article>
-                <div className="sub_inner">
-                  <h2 className="sub_number">04</h2>
-                  <div className="sub_video"></div>
-                  <div className="sub_line"></div>
-                  <div className="sub_content">
-                    <h3>
-                      REACT NETFLIX APP<span>100%</span>
-                    </h3>
-                    <p className="sub_date">2022.11.02-2022.11.08</p>
-                    <ul className="sub_lang">
-                      <li>React</li>
-                      <li>Javascript</li>
-                      <li>Scss</li>
-                      <li>SPA</li>
-                      <li>Firebase</li>
-                      <li>Axios</li>
-                      <li>React-router-dom</li>
-                    </ul>
-                    <ul className="sub_cont">
-                      <li className="sub_cont_title">주요업무</li>
-                      <li>
-                        <ul className="sub_cont_text">
-                          <li>
-                            <h4>1.주요기술</h4>
-                            <p>
-                              <VscCircleFilled className="VscCircleFilled" /> firebase를 이용한 스토리지 구현 및 로그인 기능
-                            </p>
-                            <p>
-                              <VscCircleFilled className="VscCircleFilled" /> router를 이용한 페이지 정리화와 이동 기능
-                            </p>
-                            <p>
-                              <VscCircleFilled className="VscCircleFilled" /> Swiper Slid 구현
-                            </p>
-                            <p>
-                              <VscCircleFilled className="VscCircleFilled" /> axios를 사용해서 영화 api를 가져옴
-                            </p>
-                            <p>
-                              <VscCircleFilled className="VscCircleFilled" /> Modal창을 이용한 팝업창 구현
-                            </p>
-                            <p>
-                              <VscCircleFilled className="VscCircleFilled" /> CSS반응형 구현
-                            </p>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="sub_circle_inner">
-                    <div className="sub_circle"></div>
-                  </div>
-                  <div className="sub_video3">
-                    <video id="video" preload="auto" autoPlay={true} loop="loop" muted="muted" volume="0">
-                      <source src={Comp5} width="300" height="600"></source>
-                    </video>
-                  </div>
-                </div>
-              </article>
-              <div className="sub_btn">
-                <div className="sub_btn_1">
-                  <button>
-                    <a onClick={() => window.open('https://jihae1996.github.io/nf_app/', '_blank', 'width=375, height=812')}>
-                      Page <MdOpenInNew className="MdOpenInNew" />
-                    </a>
-                  </button>
-                  <button>
-                    <a onClick={() => window.open('https://github.com/jihae1996/nf_app', '_blank')}>
-                      Repository <MdOpenInNew className="MdOpenInNew" />
-                    </a>
-                  </button>
-                  {/* 뜨는 팝업페이지가 모바일 크기로 지정해야함 */}
-                </div>
-              </div>
-            </section>
-          </SwiperSlide>
+
           <SwiperSlide>
             {/* 5 */}
             <section className="sub_container_section">
               <article>
                 <div className="sub_inner">
-                  <h2 className="sub_number">05</h2>
+                  <h2 className="sub_number">04</h2>
                   <div className="sub_video"></div>
                   <div className="sub_line"></div>
                   <div className="sub_content">
